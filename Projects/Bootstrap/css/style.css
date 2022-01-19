@@ -1,0 +1,12 @@
+html{
+    max-width: 100%;
+}
+.container{
+    background: #55affd;
+}
+.container-fluid{
+    background: #9ae180;
+}
+.col{
+    border: 1px solid #000;
+}

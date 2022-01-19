@@ -1,0 +1,99 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+/**********************************************************************************************************************
+HTML, HEADER y BODY */
+
+html{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+    margin: 2em auto;
+    font-family: Verdana, sans-serif;
+}
+h1{
+    margin: 1em 0;
+    border-bottom: 1px solid #000;
+}
+.comun{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0.5em 0;
+}
+.uno{
+    background-color: red;
+}
+.dos{
+    background-color: yellow;
+}
+.tres{
+    background-color: green;
+}
+.cuatro{
+    background-color: blue;
+}
+
+/**********************************************************************************************************************
+POSITION STATIC (Es lo mismo que no poner nada) */
+
+.static div{
+    width: 25%;
+    position: static;
+}
+
+/**********************************************************************************************************************
+POSITION RELATIVE */
+
+.relative div{
+    width: 25%;
+    position: relative;
+}
+.relative div:first-child{
+    left: 1em; /* left relativo al padre (.relative) */
+}
+.relative div:nth-child(2){
+    left: 2em;
+    bottom: 1em;
+}
+
+/**********************************************************************************************************************
+ABSOLUTE */
+
+.absolute{
+    height: 100px;
+}
+.absolute div{
+    width: 25%;
+    position: absolute;
+}
+.absolute div:first-child{
+    left: 1em; /* left absoluto relativo al HTML */
+}
+.absolute div:last-child{
+    right: 1em; /* right absoluto relativo al HTML */
+}
+
+/**********************************************************************************************************************
+FIXED (Aunque hagas SCROLL siempre la ves) */
+
+.fixed div{
+    width: 10%;
+    position: fixed;
+}
+.fixed div:first-child{
+    top: 0;
+    left: 0;
+}
+.fixed div:nth-child(2){
+    top: 0;
+    right: 0;
+}
+.fixed div:nth-child(3){
+    bottom: 0;
+    left: 0;
+}
+.fixed div:last-child{
+    bottom: 0;
+    right: 0;
+}

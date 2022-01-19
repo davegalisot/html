@@ -1,0 +1,372 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono');
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+/**********************************************************************************************************************
+HTML */
+
+html{
+    background-color: #878787;
+    letter-spacing: 0.3px;
+    margin: 10px;
+}
+
+/**********************************************************************************************************************
+BODY */
+
+body{
+    max-width: 1920px;
+    background-color: #d9d9d9;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px  5px #333, -5px 0px  5px #333;
+}
+
+/**********************************************************************************************************************
+HEADER */
+
+header{
+    padding: 20px 0;
+}
+header img{
+    width: 200px;
+    margin: 0 50px;
+}
+
+/**********************************************************************************************************************
+MENU */
+
+.contMenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contMenu form button{
+    border: 0;
+    margin: 10px 10px;
+    background: #ffffff;
+    outline:none;
+}
+ul.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+}
+ul.menu p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: bold;
+}
+ul.menu li{
+    list-style: none;
+    margin: 0 10px;
+    padding: 10px 30px;
+    text-align: center;
+    width: 100px;
+}
+ul.menu button:hover{
+    background: #c4c4c4;
+    cursor:pointer;
+}
+.comp{
+    width: 80px;
+    margin: 25px 0 0 0;
+}
+.perifericos{
+    width: 80px;
+    margin: 25px 0 0 0;
+}
+.phone{
+    width: 45px;
+    margin: 10px 0 0 0;
+}
+.laptop{
+    width: 90px;
+    margin: 30px 0 0 0;
+}
+
+/**********************************************************************************************************************
+SECTION */
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+section button{
+    margin: 10px;
+    padding: 10px;
+    outline:none;
+    background: #ffffff;
+    cursor:pointer;
+    border: 4px solid #fff;
+
+}
+section button:hover{
+    border: 4px solid #c4c4c4;
+}
+section button:hover .escala{
+    transform: scale(1.1);
+}
+
+/**********************************************************************************************************************
+ARTICLE */
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 250px;
+    height: 360px;
+}
+article img{
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+article div p{
+    font-family: 'Roboto', sans-serif;;
+    font-weight: bold;
+    color: #ff6000;
+    font-size: 1.4em;
+}
+.escala {
+    transition: all .2s ease-in-out;
+}
+#ver{
+    position: absolute;
+    text-align: center;
+    padding: 2px 0;
+    background: #c4c4c4;
+    width: 248px;
+    font-weight: bold;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+section button:hover #ver{
+    opacity: 1;
+}
+
+/**********************************************************************************************************************
+***********************************************************************************************************************
+PRODUCTO.PHP
+***********************************************************************************************************************
+***********************************************************************************************************************/
+
+/* SECTION */
+
+.section *{
+    cursor: default;
+}
+
+/* ARTICULO */
+
+.article{
+    all: initial;
+    display: flex;
+}
+.article img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.article h3{
+    font-size: 2em;
+    margin: 20px 20px 10px 10px;
+}
+.article p{
+    margin: 5px 0 10px 10px;
+    font-size: 2em;
+}
+.izquierdo{
+    width: 40%;
+}
+.derecho{
+    background: #fff;
+    padding: 0 10px;
+    margin: 0 0 0 2%;
+    width: 58%;
+}
+.derecho li{
+    margin: 0 20px 10px 0;
+}
+
+/* FOTOS PEQUEÑAS */
+
+.otrasFotos{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+
+}
+.otrasFotos img{
+    width: 40%;
+    height: 40%;
+    margin: 5%;
+    padding: 0;
+    border: 2px solid #959595;
+}
+
+/* BOTÓN VOLVER */
+
+.volver {
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+}
+.volver a{
+    padding: 10px 20px;
+    background: #ffffff;
+    text-decoration: none;
+    color: #000;
+    font-size: 2em;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+#reloj{
+    text-align: right;
+}
+footer{
+    font-family: Raleway, sans-serif;
+    border-top: 2px solid #333;
+    background-color: #fff;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div>p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div>p:last-child{
+    margin-top: 2px;
+}
+
+/**********************************************************************************************************************
+***********************************************************************************************************************
+MEDIA QUERIES
+***********************************************************************************************************************
+***********************************************************************************************************************/
+
+/**********************************************************************************************************************
+Pantallas grandes (desktops de menos de 1200px) */
+
+@media (max-width: 1199.98px) {
+
+}
+
+/**********************************************************************************************************************
+Pantallas medianas (tablets de menos de 992px) */
+
+@media (max-width: 991.98px) {
+    .derecho{
+        font-size: 80%;
+    }
+}
+
+/**********************************************************************************************************************
+Pantallas pequeñas (móviles en landscape de menos de 768px) */
+
+@media (max-width: 767.98px) {
+
+    ul.menu li{
+        padding: 5px 15px;
+        transform: scale(0.8);
+        width: 80px;
+    }
+    .contMenu form button{
+        margin: 5px;
+    }
+
+    .izquierdo{
+        width: 100%;
+    }
+    .derecho{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .article{
+        flex-wrap: wrap;
+    }
+}
+
+/**********************************************************************************************************************
+Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+
+@media (max-width: 575.98px) {
+
+    header{
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .contMenu form{
+        width: 100%;
+    }
+    ul.menu{
+        padding: 0;
+        width: 100%;
+    }
+    ul.menu li{
+        padding: 0;
+        margin: 0;
+        width: 80px;
+    }
+    .contMenu form button{
+        margin: 5px;
+    }
+    .comp{
+        width: 0;
+        margin: 0;
+    }
+    .perifericos{
+        width: 0;
+        margin: 0;
+    }
+    .phone{
+        width: 0;
+        margin: 0;
+    }
+    .laptop{
+        width: 0;
+        margin: 0;
+    }
+
+    section button{
+        width: 100%;
+    }
+    section article{
+        width: 100%;
+        height: 100%;
+    }
+    article img{
+        width: 90%;
+        margin: 10px auto 0 auto;
+    }
+
+}

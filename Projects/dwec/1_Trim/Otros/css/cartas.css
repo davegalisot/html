@@ -1,0 +1,87 @@
+html{
+    background-color: #bfbfbf;
+    font-family: Arial, sans-serif;
+}
+body{
+    width: 500px;
+    background-color: #ffffff;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+header{
+    background-color: black;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    color: #55affd;
+    width: 100%;
+}
+body>div{
+    margin: 50px 0 0px 0;
+    text-align: center;
+}
+div div img{
+    border-radius: 10px;
+    width: 100px;
+    height: 150px;
+    box-shadow: 3px 0px 10px #8c8c8c, -3px 0px 10px #8c8c8c;
+    object-fit: cover;
+    //background-color: deepskyblue;
+}
+
+button{
+    visibility: hidden;
+}
+#salida{
+    position: absolute;
+    top: 40%;
+    right: 31%;
+    color: red;
+    font-size: xx-large;
+    visibility: hidden;
+}
+#salida div{
+    position: absolute;
+    top: 26%;
+    right: 35%;
+    margin: 0;
+}
+#salida div p{
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 3px 1px black;
+}
+.victory{
+    width: 500px;
+    border: none;
+    box-shadow: none;
+    //visibility: hidden;
+}
+.abajo{
+    margin: 10px 0 0 0;
+}
+footer{
+    background-color: #333;
+    color: #8c8c8c;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 40px 5px 40px;
+    font-size: x-small;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    font-family: Calibri, sans-serif;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div>p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div>p:last-child{
+    margin-top: 2px;
+}

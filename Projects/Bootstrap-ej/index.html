@@ -1,0 +1,232 @@
+<!--
+Crea un sitio web utilizando bootstrap con las siguientes características:
+
+El ancho máximo será de 1440px y el contenido estará centrado si la pantalla es más ancha.
+
+En pantallas muy grandes:
+    El header debe de tener una imagen a la izquierda que ocupe el 25% y un título centrado en el 75% restante.
+    Una section con 12 articles debe mostrar 4 articles en cada fila.
+    Cada article llevará una imagen a la izquierda ocupando el 25% y un título con un párrafo debajo en el 75% restante.
+    Un footer sencillo.
+
+    NOTA: Pone bordes a todos los elementos para ver mejor las separaciones
+
+En pantallas grandes:
+    La imagen del header pasa al 33.33% y el título al 66.67%.
+    La section muestra 3 articles en cada fila
+
+En pantallas medianas:
+    La section muestra 2 articles por fila
+    En cada article, la imagen ocupa el 50% y el título y párrafo el otro 50%
+
+En pantallas pequeñas:
+    El header muestra la imagen encima ocupando un 33.33% pero centrada y el título el 100% debajo
+    La section muestra un article en cada fila
+    Cada article muestra la imagen debajo, el título debajo y el párrafo debajo
+
+    EXTRA: Cada article muestra el título encima, la imagen debajo y el párrafo debajo.
+
+Limitaciones:
+
+    Solo puedes utilizar en css las clases para poner los bordes y ajustar el ancho de la imagen a su contenedor, así
+    como para establecer el ancho máximo.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+              integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Layout</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="row">
+                    <div class="p-2 col-xl-3 col-lg-4 col-md-6 col-sm-4 mx-auto">
+                        <img class="img-fluid" src="img/Placeholder.png"/>
+                    </div>
+                    <h1 class="col-xl-9 col-lg-8 col-md-6 col-sm-12 text-center my-auto">Esto es un título</h1>
+            </header>
+            <section class="p-3 container">
+                <div class="row">
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3 col-md-6">
+                                <img class="img-fluid" src="img/Placeholder.png"/>
+                            </div>
+                            <div class="col-xl-9 col-lg-9 col-md-6">
+                                <h3>Título del artículo</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ex mollitia nam quasi
+                                   quis? Aperiam asperiores aut error, natus nostrum odio qui quisquam. Laudantium minima
+                                   mollitia, pariatur quidem totam voluptates?</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <footer class="row">
+                <div>
+                    Un footer Sencillo.
+                </div>
+            </footer>
+        </div>
+<!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    </body>
+</html>

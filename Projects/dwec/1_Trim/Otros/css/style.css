@@ -1,0 +1,96 @@
+html{
+    padding: 20px 0 20px 0;
+    background-color: #bfbfbf;
+    font-family: Arial, sans-serif;
+}
+body{
+    width: 1000px;
+    background-color: #ffffff;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px 5px #8c8c8c, -5px 0px 5px #8c8c8c;
+}
+body>div{
+    margin: 50px 0;
+ }
+header{
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    color: #55affd;
+    width: 100%;
+}
+
+
+fieldset div p{
+    margin:5px 0 5px 0;
+}
+fieldset{
+    margin: 20px 80px 20px 80px;
+    border: 1.5px solid #55affd;
+}
+legend{
+    font-size: x-large;
+    padding: 0 10px;
+}
+h6{
+    padding: 0 20px 0 30px;
+    color: #5b5b5b;
+    font-size: xx-small;
+    margin-top: 0;
+}
+#boton{
+    display: inline-block;
+    margin: auto;
+    color: #4569ff;
+    cursor: pointer;
+}
+#URL, #inputLista{
+    border: inset;
+    padding-left: 2px;
+}
+#botonAñadir{
+    margin: 0 0 0 10px;
+}
+fieldset div{
+    display: flex;
+    text-align: left;
+}
+fieldset div div:first-child{
+    display: block;
+    margin: 0 0 0 20px;
+}
+fieldset div div:last-child{
+    display: block;
+    margin: auto;
+}
+input[type="text"]{
+    width: 350px;
+}
+
+
+footer{
+    background-color: #333;
+    color: #8c8c8c;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 70px 20px 70px;
+    font-size: small;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    font-family: Calibri, sans-serif;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div>p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div>p:last-child{
+    margin-top: 2px;
+}

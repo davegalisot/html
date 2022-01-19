@@ -1,0 +1,327 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                                  Autor: DaVeGaLiSoT
+***********************************************************************************************************************/
+
+/*** import de fuente/s google fonts ***/
+@import url('https://fonts.googleapis.com/css?family=Acme|Anton|Noto|Kanit|Titillium+Web&display=swap');
+
+
+/**********************************************
+VARIABLES */
+:root{
+    --main-fondo: #bfbfbf;
+    --main-borde: #878787;
+}
+*{
+    font-family: "Kanit", sans-serif;
+}
+/**********************************************
+HTML Y BODY */
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #141526;
+    overflow-x: hidden;
+}
+/**********************************************
+NAV */
+nav {
+    position: sticky;
+    float: right;
+    top: 230px;
+    right: 160px;
+    padding-right: 40px;
+    border-left: 1px solid goldenrod;
+}
+nav ol{
+    color: #F28857;
+}
+nav li.active > a {
+    color: #0e8d0b;
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    /*padding: .125rem 0;*/
+    font-size: 20px;
+    color: #ccc;
+    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+nav a:hover,
+nav a:focus {
+    text-decoration: none;
+    color: #0e8d0b;
+}
+nav ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+/**********************************************
+ARTICLE CON DATOS DE LA API */
+#mainArticle section{
+    margin-top: 100px;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-title{
+    margin: 20px 0;
+    text-align: center;
+    cursor: default;
+    user-select: none;
+}
+.main-title h1{
+    color: goldenrod;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.6px;
+}
+.main-title p{
+    position: relative;
+    color: #afafaf;
+    bottom: 10px;
+    left: 158px;
+    font-style: italic;
+    font-size: 13px;
+    margin: 0;
+}
+.liga{
+    display: flex;
+    cursor: default;
+    user-select: none;
+}
+.liga>h1{
+    margin: 0 0 0 5px;
+    padding: 0 0 3px 0;
+    color: #b0fcff;
+}
+.pais-liga{
+    margin-left: 10px;
+}
+.pais-liga h1{
+    font-size: 14px;
+    color: #b6b6b6;
+    margin: 4px 0 -8px 0;
+    letter-spacing: 1px;
+}
+.pais-liga p{
+    font-size: 22px;
+    margin: -8px 0 0 0;
+    color: #b0fcff;
+}
+.flag{
+    width: 30px;
+}
+.mainData{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mensaje_error{
+    margin: 25px 0;
+    font-style: italic;
+    color: #fff0d0;
+    cursor: default;
+    user-select: none;
+}
+.rect{
+    margin: 10px;
+    /*max-width: 300px;*/
+    background-color: #262949;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.rect iframe{
+    transition: all 0.5s;
+}
+.rect>div{
+    overflow: hidden;
+}
+.rect a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.rect a, .rect p{
+    color: #fff;
+}
+/*effect-underline*/
+.rect a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 0.6em;
+    width: 100%;
+    border-bottom: 2px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+}
+.rect:hover iframe{
+    transform: scale(1.2);
+    /*transition: all 0.5s;*/
+}
+.rect a:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.rect img{
+    width: 250px;
+    height: 187.5px;
+}
+.rect iframe{
+    /*max-width: 298px;*/
+    /*border-top-left-radius: 10px;*/
+    /*border-top-right-radius: 10px;*/
+}
+.rect .mainP{
+    margin: 0;
+    padding: 0 4px;
+}
+.rect .mainP a{
+    font-family: "Noto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.rect .div2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4px;
+    flex-wrap: wrap;
+    max-width: 350px;
+    margin-bottom: 5px;
+}
+.rect .div2 *{
+    font-family: "Noto", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+.rect .compP{
+    margin-bottom: 0;
+}
+.rect .fecha-vid{
+    cursor: default;
+    user-select: none;
+}
+
+/***********************************************************************************************************************
+FOOTER */
+
+footer{
+    color: var(--main-fondo);
+    width: 100%;
+    height: 90px;
+    margin: 100px auto 90px auto;
+    z-index: 1;
+}
+.footer-separator{
+    width: 90%;
+    border-top: 1px solid white;
+    margin: 40px 0;
+}
+.firma{
+    margin-top: 10px;
+}
+.firma:hover{
+    cursor: default;
+}
+.firma img{
+    width: 170px;
+    /*-webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));*/
+}
+.firma p{
+    padding-left: 120px;
+    color: white;
+}
+.firma img{
+    margin-right: 120px;
+}
+
+/**********************************************************************************************************************
+LOADING PROGRESS BAR */
+
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-perspective: 12rem;
+    -moz-perspective: 12rem;
+    -ms-perspective: 12rem;
+    -o-perspective: 12rem;
+    perspective: 12rem;
+    z-index: 2000;
+    position: fixed;
+    height: 6rem;
+    width: 6rem;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.pace.pace-inactive .pace-progress {
+    display: none;
+}
+.pace .pace-progress {
+    position: fixed;
+    z-index: 2000;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 6rem;
+    width: 6rem !important;
+    line-height: 6rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    text-align: center;
+    -webkit-animation: pace-theme-center-circle-spin linear infinite 2s;
+    -moz-animation: pace-theme-center-circle-spin linear infinite 2s;
+    -ms-animation: pace-theme-center-circle-spin linear infinite 2s;
+    -o-animation: pace-theme-center-circle-spin linear infinite 2s;
+    animation: pace-theme-center-circle-spin linear infinite 2s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.pace .pace-progress:after {
+    content: attr(data-progress-text);
+    display: block;
+}
+@-webkit-keyframes pace-theme-center-circle-spin {
+    from { -webkit-transform: rotateY(0deg) }
+    to { -webkit-transform: rotateY(360deg) }
+}
+@-moz-keyframes pace-theme-center-circle-spin {
+    from { -moz-transform: rotateY(0deg) }
+    to { -moz-transform: rotateY(360deg) }
+}
+@-ms-keyframes pace-theme-center-circle-spin {
+    from { -ms-transform: rotateY(0deg) }
+    to { -ms-transform: rotateY(360deg) }
+}
+@-o-keyframes pace-theme-center-circle-spin {
+    from { -o-transform: rotateY(0deg) }
+    to { -o-transform: rotateY(360deg) }
+}
+@keyframes pace-theme-center-circle-spin {
+    from { transform: rotateY(0deg) }
+    to { transform: rotateY(360deg) }
+}

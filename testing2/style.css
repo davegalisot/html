@@ -1,0 +1,254 @@
+:root {
+    --corporate-red: #A91B3E;
+    --corporate-blue: #1B5487;
+    --fondo-slider: #d4d4d4;
+    --color-parrafos: #757474;
+    --fondo-corporate-red-o30: rgba(169, 27, 62, 0.31);
+    --fondo-corporate-blue-o30: rgba(27, 84, 135, 0.3);
+}
+
+/**********************************************************************************************************************
+HEADER */
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    font-family: Roboto, sans-serif;
+    background-color: var(--corporate-blue);
+    z-index: 5;
+    transition: all 0.5s 0s;
+}
+header .centered_vertically{
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width: 160px;
+    transition: all 0.5s 0s;
+}
+header #logo{
+    padding: 10px 0 0 0;
+    transition: all 0.5s 0s;
+}
+
+/**********************************************************************************************************************
+BOTON **GO TO TOP** QUE APARECE AL HACER SCROLL */
+
+#btn-go-to-top {
+    opacity: 0;
+    position: fixed;
+    bottom: 30px;
+    right: -80px;
+    z-index: 10;
+    transition: all 0.5s 0s;
+}
+#btn-go-to-top img{
+    width: 70px;
+}
+#btn-go-to-top:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+/**********************************************************************************************************************
+NAV y THEME CHANGER */
+
+.nav-y-theme-changer{
+    display: flex;
+}
+.div-theme-changer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: scale(0.7);
+}
+
+/**********************************************************************************************************************
+NAV */
+
+nav li,
+.dropdown{
+    padding: 0 15px;
+    height: 100px;
+    transition: 0.5s 0s;
+}
+.dropdown{
+    width: 205.66px;
+}
+nav a{
+    text-transform: uppercase;
+}
+.dropbtn{
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+nav li:hover,
+.dropdown:hover{
+    background-color: white;
+    cursor: pointer;
+}
+nav li:hover p,
+.dropdown:hover p{
+    color: var(--corporate-blue);
+    border-bottom-color: var(--corporate-blue);
+}
+.dropdown:hover .inicios{
+    border-bottom-color: white;
+}
+nav li p,
+.dropdown p{
+    position: relative;
+    color: white;
+    padding: 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Raleway ExtraBold", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    top: 38%;
+    border-bottom: 2px solid var(--corporate-blue);
+    transition: all 0.5s 0s;
+}
+nav a:hover{
+    text-decoration: none;
+}
+.dropdown:hover .chevron{
+    color: var(--corporate-blue);
+}
+.dropdown-content{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    background-color: var(--corporate-blue);
+    color: white;
+    width: 205.66px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.5s 0s;
+}
+.dropdown-content a{
+    color: white;
+    font-size: 16px;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 2px;
+    height: 48px;
+    transition: font-size 0.5s 0s;
+}
+.dropdown-content a:hover {
+    background-color: white;
+    color: var(--corporate-blue);
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    height: 240px;
+}
+
+/* navbar movil */
+
+#navbar-movil{
+    padding-top: 100px;
+    background-color: var(--corporate-blue);
+}
+#navbar-movil .nav-item{
+    height: 40px;
+}
+
+/**********************************************************************************************************************
+THEME CHANGER */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    width: 60px;
+    height: 30px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The slider */
+header .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+header .slider:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0 15px #2020203d;
+    background: white url('https://i.ibb.co/FxzBYR9/night.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header input:checked + .slider {
+    background-color: #2196f3;
+}
+header input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+header input:checked + .slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+    background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* Rounded sliders */
+header .slider.round {
+    border-radius: 34px;
+}
+header .slider.round:before {
+    border-radius: 50%;
+}
+
+/* MEDIA QUERIES */
+
+/*Pantallas grandes (desktops de menos de 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+/*Pantallas medianas (tablets de menos de 992px)*/
+@media (max-width: 991.98px) {
+    #navbar{
+        display: none;
+    }
+}
+
+/*Pantallas pequeñas (móviles en landscape de menos de 768px)*/
+@media (max-width: 767.98px) {
+
+}
+
+/*Pantallas muy pequeñas (móviles en portrait de menos de 576px)*/
+@media (max-width: 575.98px) {
+
+}
+@media (min-width: 991.98px) {
+    #navbar-movil{
+        display: none;
+    }
+}

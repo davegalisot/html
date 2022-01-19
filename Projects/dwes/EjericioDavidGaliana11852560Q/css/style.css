@@ -1,0 +1,134 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
+
+/**********************************************************************************************************************
+HTML, HEADER y BODY */
+
+html{
+    background-color: #bfbfbf;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+}
+
+/**********************************************************************************************************************
+BODY */
+
+body{
+    width: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+
+/**********************************************************************************************************************
+HEADER */
+
+header{
+    background-color: #333;
+    padding: 5px 0 5px;
+    text-align: center;
+}
+header div button{
+    background: #333;
+    border: 0;
+    margin: 10px auto;
+    cursor: pointer;
+    color: #55affd;
+    font-size: 4em;
+    outline: none;
+}
+
+/**********************************************************************************************************************
+TABLE */
+
+table{
+    margin: 20px auto;
+    border-collapse: collapse;
+    cursor: default;
+    width: 600px;
+}
+table th{
+    font-size: 1.4em;
+}
+table td{
+    padding: 10px 15px;
+    font-size: 1.4em;
+}
+table td:nth-child(3){
+    color: #f29c0f;
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px #333, -0.5px -0.5px #333;
+}
+table td:nth-child(4){
+    font-weight: bold;
+}
+table tr:nth-child(even){
+    background: #c3c3c3;
+}
+table tr input{
+    background: transparent;
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+table tr:hover{
+    background: #929292;
+}
+
+/**********************************************************************************************************************
+SECTION */
+
+section div:first-child{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+section div:first-child input{
+    margin-left: 10px;
+}
+section div input[type="text"]{
+    width: 200px;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+footer{
+    font-family: 'Raleway', sans-serif;
+    background-color: #333;
+    color: #a5a5a5;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 40px 15px 40px;
+    font-size: 12px;
+    cursor: default;
+    user-select: none;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div>p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div>p:last-child{
+    margin-top: 2px;
+}
+#reloj{
+    text-align: right;
+}

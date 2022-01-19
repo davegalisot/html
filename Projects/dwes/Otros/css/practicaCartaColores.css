@@ -1,0 +1,181 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+html{
+    background-color: #bfbfbf;
+    font-family: Verdana, sans-serif;
+    letter-spacing: 0.3px;
+    padding: 20px 0 20px 0;
+}
+body{
+    width: 1000px;
+    background-color: white;
+    //background-image: repeating-linear-gradient(rgb(214, 210, 214), rgb(255, 255, 255), rgb(255, 255, 255));
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 0 10px 0;
+    color: #55affd;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 2px rgba(168, 168, 169, 0.27), 0 0 2px rgba(169, 163, 167, 0.28);
+}
+header>img{
+    margin: 0 20px 0 0;
+    width: 80px;
+    height: 80px;
+}
+body>div{
+    padding: 50px 20px 50px 20px;
+}
+
+
+fieldset{
+    margin: 20px 200px 20px 200px;
+    padding: 10px 10px 20px 10px;
+    border: 2px solid #c1c1c1;
+}
+legend{
+    padding: 0 10px 0 10px;
+}
+form>div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+form>div>div{
+    display: block;
+    padding: 5px 10px 5px 10px;
+}
+img{
+    width: 320px;
+    height: 90px;
+}
+p{
+    margin: 5px;
+    cursor: default;
+}
+.divMiniBotones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+.miniBotones{
+    width: 20px;
+    height: 20px;
+}
+table{
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 70%;
+}
+th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #333;
+}
+td:nth-child(3n-1){
+    border: 1px solid #ddd;
+}
+td, th {
+    padding: 5px;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
+}
+.noEditable{
+    border: inset;
+    border-radius: 3px;
+    height: 25px;
+    width: 120px;
+    text-align: center;
+    cursor: default;
+}
+.boton{
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.izq{
+    margin-right: 10px;
+}
+.dcha{
+    margin-left: 10px;
+}
+.genera{
+    margin-left: 10px;
+}
+.numeroColores{
+    font-size: 13px;
+}
+.input {
+    cursor: text;
+    border: 1px solid #333;
+    border-radius: 3px;
+    height: 25px;
+    width: 120px;
+    text-align: center;
+}
+.convierteIzq{
+    margin-left: 100px;
+}
+.otroDiv{
+    margin-top: 30px;
+}
+.generador{
+    margin-top: 48px;
+    margin-left: 10px;
+
+}
+.resultado{
+    display: flex;
+    flex-direction: column;
+}
+.pregunta{
+    color: #333;
+    font-size: 11px;
+}
+.verde{
+    color: #3b9e24;
+}
+
+
+footer{
+    background-color: #333;
+    color: #8c8c8c;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 40px 15px 40px;
+    font-size: 12px;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    font-family: Calibri, sans-serif;
+    padding: 0 20px 0 20px;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div>p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div>p:last-child{
+    margin-top: 2px;
+}

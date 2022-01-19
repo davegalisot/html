@@ -1,0 +1,121 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+
+/* PANEL DE ADMINISTRACION */
+
+/**********************************************************************************************************************
+USUARIOS/ENTRAR */
+
+.login{
+    max-width: 270px;
+    box-shadow: #8c8c8c 1px 1px 15px;
+    border-radius: 5px;
+}
+
+/**********************************************************************************************************************
+USUARIOS/INDEX, USUARIOS/EDITAR, PRODUCTOS/INDEX & PRODUCTOS/LISTADO */
+
+.borde{
+    box-shadow: #8c8c8c 1px 1px 15px;
+    border-radius: 5px;
+}
+.borde *{
+    font-size: 1.2em;
+}
+.cabecera_listado{
+    font-weight: bold;
+    margin: 0;
+}
+.user{
+    font-size: 100px;
+    margin: 10px;
+    color: #b0b0b0;
+}
+
+/**********************************************************************************************************************
+LISTA USUARIOS & LISTA PRODUCTOS COMUN */
+
+.containerUser{
+    width: 150px;
+}
+.separado{
+    margin: 20px;
+}
+.item_listado{
+    padding: 20px;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.iconos i{
+    font-size: 2em;
+}
+
+/* ICONOS ACTIVO */
+.verde{
+    color: #28b776;
+}
+.rojo{
+    color: #ad211f;
+}
+.invertido{
+    background: #333;
+    color: #fff;
+}
+.padding{
+    padding: 20px;
+}
+
+.mensaje_borrar{
+    font-size: 0.6em;
+    padding: 0.3em;
+    text-align: right;
+    color: #856404;
+    background-color: #fff3cd;
+    border: 1px solid #856404;
+    border-radius: 5px;
+    display: none;
+}
+
+.mensaje_borrar a,
+.mensaje_borrar a:hover,
+.mensaje_borrar a.boton_borrar,
+.mensaje_borrar a:hover.boton_borrar{
+    color: #856404;
+    text-decoration: underline;
+    padding: 0 0.2em;
+    cursor: pointer;
+}
+
+/**********************************************************************************************************************
+LSITA PRODUCTOS */
+
+.separado_superior{
+    margin-top: 20px;
+}
+.descripcion{
+    font-size: 0.5em;
+}
+
+/**********************************************************************************************************************
+IMAGEN */
+
+textarea{
+    resize: none;
+    width: 100%;
+}
+
+/**********************************************************************************************************************
+IMAGEN */
+
+.imagen img{
+    margin: 2em 0 0 0;
+    width: 50%;
+}
+
+.imagen_mini img{
+    width: 100%;
+    padding: 0.5em 1em 0.5em 0;
+}

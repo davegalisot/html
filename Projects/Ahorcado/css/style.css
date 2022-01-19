@@ -1,0 +1,429 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway|Indie+Flower|Bree+Serif');
+
+/**********************************************************************************************************************
+HTML, HEADER y BODY */
+
+html{
+    font-family: 'Gloria Hallelujah', cursive;
+    background-color: #333;
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+}
+
+/**********************************************************************************************************************
+HEADER */
+
+header{
+    background: #333;
+    color: #55affd;
+    padding: 5px 0;
+    text-align: center;
+}
+.headerButton{
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #55affd;
+    background: #333;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/**********************************************************************************************************************
+BODY */
+
+body{
+    font-family: 'Gloria Hallelujah', cursive;
+    max-width: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    //box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+
+/**********************************************************************************************************************
+FORM */
+
+/* INPUT PRINCIPAL */
+
+.contEntrada{/* Contenedor input principal */
+    font-family: 'Bree Serif', serif;
+    display: block;
+    text-align: center;
+}
+.contEntrada p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.contEntrada input{
+    font-family: 'Bree Serif', serif;
+}
+#entrada{/* input que recoge las letras introducidas por el usuario */
+    margin: 0 0 0 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 45px;
+    outline: none;
+}
+
+/* PALABRA A ADIVINAR */
+
+.tema{
+    text-align: center;
+}
+
+/* TABLE PARA MOSTRAR "_" */
+
+.contLetras{
+    position: absolute;
+    right: 25%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10px 150px 0;
+    padding: 10px 0;
+    border-collapse: separate;
+    border-spacing: 1em;
+    z-index: 0;
+}
+
+table td{
+    font-family: 'Bree Serif', serif;
+    border-bottom: 2px solid #333;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    font-size: 35px;
+    margin: 15px;
+}
+
+/* MENSAJE GANADO O PERDIDO */
+
+#contenedor{
+    //position: absolute;
+}
+#h3{
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* COLORES DE MENSAJE GANADO O PERDIDO */
+
+.rojo{
+    position: absolute;
+    color: red;
+    font-size: 4em;
+    top: 20%;
+    left: 39%;
+    background: linear-gradient(to right, #fff, #e18182,#fff);
+    text-shadow: 1px 1px 5px #333;
+    z-index: 0;
+}
+.verde{
+    position: absolute;
+    color: green;
+    top: 20%;
+    left: 39%;
+    font-size: 4em;
+    background: linear-gradient(to right, #fff, #9ae180,#fff);
+    text-shadow: 1px 1px 5px #333;
+    z-index: 0;
+}
+
+/* MENSAJE PALABRA ADIVINAR (SE MUESTRA AL PERDER) */
+
+#adivinar{
+    text-align: center;
+    position: absolute;
+    width: 340px;
+    top: 35.9%;
+    left: 42%;
+    font-size: 2em;
+    background: linear-gradient(to left, #fff, #e18182,#fff);
+    z-index: 1;
+}
+#adivinar p{
+    margin:0;
+}
+#adivinar p:last-child{
+    text-shadow: 1px 1px 5px #ffffff;
+}
+
+.noborde{
+    border: 0;
+}
+
+/* CONTENDOR Y BOTÓN REINICIAR */
+
+.contReiniciar{/* contenedor */
+    position: absolute;
+    top: 32.5%;
+    left: 45.5%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+.reiniciarJuego{
+    font-family: 'Bree Serif', serif;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 1.4em;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* OPACIDAD */
+
+.opacity{
+    opacity: 0;
+}
+.opacityOne{
+    opacity: 1;
+}
+
+/* FALLOS */
+
+#fallos{
+    position: absolute;
+    top: 35%;
+    left: 33%;
+    display: block;
+    margin-left: 300px;
+}
+#fallos span, #fallos b{
+    font-family: 'Bree Serif', serif;
+    text-align: right;
+    margin: 0;
+    font-size: 1.4em;
+}
+
+/**********************************************************************************************************************
+POSTE Y MONIGOTE */
+
+.posteMonigote{
+    position: absolute;
+    top: 200px;
+    z-index: 1;
+}
+.monigote{
+    position: relative;
+    bottom: 699px;
+    right: 10px;
+}
+.poste{
+    position: relative;
+    bottom: 150px;
+    margin: 50px 50px;
+    width: 220px;
+    transform: scale(0.8);
+}
+#cabeza{
+    position: relative;
+    top: 80px;
+    left: 210px;
+    width: 80px;
+}
+#cuerpo{
+    position: relative;
+    top: 148px;
+    left: 141.5px;
+    width: 50px;
+}
+#bra_izq{
+    position: relative;
+    top: 125.5px;
+    left: 77px;
+    width: 24px;
+}
+#bra_dcho{
+    position: relative;
+    top: 133px;
+    left: 89.5px;
+    width: 26px;
+}
+#pie_izq{
+    position: relative;
+    top: 201px;
+    left: 4px;
+    width: 40px;
+}
+#pie_dcho{
+    position: relative;
+    top: 194.5px;
+    left: 6.5px;
+    width: 30px;
+}
+
+/* PUNTUACION */
+
+#score{
+    margin: 420px 20px 0 0;
+    font-family: 'Bree Serif', serif;
+    text-align: right;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+#reloj{
+    text-align: right;
+}
+footer{
+    font-family: 'Raleway', sans-serif;
+    background-color: #333;
+    color: #a5a5a5;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 40px 15px 40px;
+    font-size: 12px;
+    cursor: default;
+    user-select: none;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div p:last-child{
+    margin-top: 2px;
+}
+
+/**********************************************************************************************************************
+***********************************************************************************************************************
+MEDIA QUERIES
+***********************************************************************************************************************
+***********************************************************************************************************************/
+
+@media (max-width: 1439px) {
+    .contLetras{
+        right: 15%;
+    }
+    #fallos{
+        left: 25%;
+    }
+    .rojo{
+        left: 36%;
+    }
+    .verde{
+        left: 36%;
+    }
+    .contReiniciar{/* contenedor */
+        left: 44%;
+    }
+    #adivinar{
+        left: 38%;
+    }
+}
+
+/*Pantallas grandes (desktops de menos de 1200px)*/
+@media (max-width: 1199.98px) {
+    .contLetras{
+        right: 10%;
+    }
+    #fallos{
+        left: 23%;
+    }
+    .rojo{
+        left: 34%;
+    }
+    .verde{
+        left: 34%;
+    }
+    .contReiniciar{/* contenedor */
+        left: 43%;
+    }
+    #adivinar{
+        left: 37%;
+    }
+}
+
+/*Pantallas medianas (tablets de menos de 992px)*/
+@media (max-width: 991.98px) {
+    .contLetras{
+        right: 3%;
+    }
+    #fallos{
+        left: 23%;
+    }
+    .rojo{
+        left: 32%;
+    }
+    .verde{
+        left: 32%;
+    }
+    .contReiniciar{/* contenedor */
+        left: 42%;
+    }
+    #adivinar{
+        left: 33%;
+    }
+}
+
+/*Pantallas pequeñas (móviles en landscape de menos de 768px)*/
+@media (max-width: 767.98px) {
+    .posteMonigote{
+        left: -8%;
+    }
+    .contLetras{
+        right: 3%;
+    }
+    #fallos{
+        left: 8%;
+    }
+    .rojo{
+        left: 25%;
+    }
+    .verde{
+        left: 25%;
+    }
+    .contReiniciar{/* contenedor */
+        left: 38%;
+    }
+    #adivinar{
+        left: 28%;
+    }
+}
+
+/*Pantallas muy pequeñas (móviles en portrait de menos de 576px)*/
+@media (max-width: 575.98px) {
+    .posteMonigote{
+        top: -5%;
+        left: -18%;
+        transform: scale(0.4);
+    }
+    .contLetras{
+        right: 3%;
+    }
+    #fallos{
+        left: -8%;
+    }
+    .rojo{
+        left: 25%;
+    }
+    .verde{
+        left: 16%;
+    }
+    .contReiniciar{/* contenedor */
+        left: 38%;
+    }
+    #adivinar{
+        left: 28%;
+    }
+}

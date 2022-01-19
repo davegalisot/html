@@ -1,0 +1,158 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                                  Autor: DaVeGaLiSoT
+***********************************************************************************************************************/
+
+/**********************************************************************************************************************
+Pantallas grandes (desktops de menos de 1200px) */
+@media only screen and (max-width: 1199.98px) {
+
+    /*********************************************************************************************/
+    /****************************************** MENU *********************************************/
+    /*********************************************************************************************/
+
+    nav li p, .dropdown p {
+        font-size: 15px;
+    }
+
+    /* ancho fijo par todos los elementos de la web */
+    .width1500px{
+        max-width: 995px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .width1350px{
+        max-width: 975px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    /*********************************************************************************************/
+    /****************************************** INDEX ********************************************/
+    /*********************************************************************************************/
+    .section-index{
+        margin-top: 20px;
+    }
+
+    /********************* NUESTRAS ACTIVIDADES  *********************/
+
+    .actividades{
+        font-size: 6vw;
+    }
+    .actividad{
+        height: 40%;
+    }
+     /* infraestructura */
+    .section-infraestructura article:nth-child(3){
+        margin-top: 40px;
+    }
+
+    /* consultoria */
+    .qh-consultoria{
+        margin-left: 15px;
+    }
+
+    /********************* Imágen encima del footer  *********************/
+
+    /*********************************************************************************************/
+    /************************************* QUIENES SOMOS *****************************************/
+    /*********************************************************************************************/
+
+    .main-texto{
+        margin-top: 80px;
+    }
+    .foto-titulo h1{
+        font-size: 100px;
+        top: 162px;
+    }
+    .blanco-tapa-h1{
+        top: 122px;
+    }
+    .section-quienes-somos .grupo-tpf img{
+        position: sticky;
+    }
+
+    /************************** CUALIDADES ****************************/
+
+
+    /*********************************************************************************************/
+    /**************************************** CONTACTO *******************************************/
+    /*********************************************************************************************/
+
+    /**************************** MAPA *******************************/
+
+    .article-mapa{
+        width: 900px;
+    }
+    /* Ancho del mapa */
+    .imagen-mapa{
+        width: 900px;
+    }
+    /* posiciones en el mapa de cada sede */
+    #div_mexico{
+        bottom: 218px;
+        left: 112px;
+    }
+    #div_colombia{
+        bottom: 179px;
+        left: 202px;
+    }
+    #div_peru{
+        bottom: 142px;
+        left: 180px;
+    }
+    #div_barcelona{
+        bottom: 264px;
+        left: 569px;
+    }
+    #div_madrid{
+        bottom: 261px;
+        left: 545px;
+    }
+    #div_marruecos{
+        bottom: 245px;
+        left: 523px;
+    }
+
+    /********************* Iconos redirección GOOGLE MAPS *********************/
+    .iconos_mapa img{
+        width: 16px;
+    }
+    /* iconos de la izquierda (madrid, barcelona, lima) */
+    .iconos_mapa div:first-child{
+        bottom: 97px;
+        left: 903px;
+    }
+    .iconos_mapa div:first-child a:first-child{
+        position: relative;
+        top: 16px;
+    }
+    .iconos_mapa div:first-child a:nth-child(2){
+        position: relative;
+        top: 8px;
+    }
+    /* iconos de la derecha (bogotá, maroc, méxico) */
+    .iconos_mapa div:last-child{
+        bottom: 169px;
+        left: 1015px;
+    }
+    .iconos_mapa div:last-child a:first-child{
+        position: relative;
+        top: 16px;
+    }
+    .iconos_mapa div:last-child a:nth-child(2){
+        position: relative;
+        top: 8px;
+    }
+
+    /********************* Footer  *********************/
+    footer h4{
+        font-size: 1em;
+    }
+    footer p{
+        font-size: 0.8em;
+    }
+
+
+
+
+}

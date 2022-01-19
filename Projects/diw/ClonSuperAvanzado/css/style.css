@@ -1,0 +1,173 @@
+html{
+    background: #f1f4fe url("../img/fondo.gif") repeat-x;
+    padding: 15px 0;
+}
+body{
+    width: 760px;
+    background-color: white;
+    margin: 0 auto;
+}
+body>div{
+    display: flex;
+}
+header{
+    background: url("../img/cabecera.jpg") no-repeat;
+}
+header>div{
+    display: flex;
+    justify-content: space-between;
+}
+header>div>div{
+    display: block;
+    margin: auto;
+}
+header>div>div:first-child{
+     margin-left: 30px;
+}
+header>div>div:last-child{
+    margin-right: 40px;
+}
+header h1{
+    color: white;
+    text-decoration: underline;
+}
+nav{
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+}
+nav>div{
+    display: flex;
+    background: #1c2862;
+    color: white;
+    padding: 10px 0 0 10px;
+}
+nav>div>div{
+    background: #293873;
+    margin: 0 3px;
+    padding: 5px 15px;
+}
+nav>div>div:nth-child(7n-5){
+    background: white;
+    color: #efac66;
+}
+section{
+    margin: 15px 0 0 20px;
+    width: 70%;
+}
+article{
+    background: url("../img/fondo_articulo.jpg") no-repeat;
+    padding: 20px 0 25px 0;
+}
+h3{
+    text-decoration: underline;
+    background: #dee4fa;
+    margin: 0 0 0 0;
+    padding: 5px 10px;
+    font-size: 22px;
+}
+.barra{
+    display: flex;
+    border-bottom: 0.5px solid #d1dff0;
+    margin: 0 15px 0 15px;
+    color: #6ea2f0;
+}
+.barra>div{
+    display: flex;
+    margin: 0 0 0 15px;
+    font-size: 13px;
+}
+.barra img{ /* imágenes de cada parte de la barra */
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    padding: 0 5px 0 0;
+}
+.texto{ /* párrafo de cada artículo */
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    padding: 0 20px;
+}
+.seguir{ /* seguir leyendo... */
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    text-decoration: underline;
+    padding: 0 0 0 20px;
+}
+aside{
+    width: 26.6%;
+    margin: 15px 15px 0 0;
+    background-color: #cad8f8;
+}
+.tapa{
+    height: 20px;
+    background: url("../img/fondo_columna.gif") no-repeat;
+}
+.uline{
+    text-decoration: underline;
+}
+.sobreMi{
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 14px;
+    background: #a3b8ed;
+}
+.divSobreMi{
+    padding: 15px 0 0 10px;
+    font-size: 13px;
+    display: flex;
+}
+.divSobreMi p{
+    margin: 3px 0 3px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+}
+.divSobreMi p:first-child{
+    font-weight: bold;
+    margin: 0 5px;
+}
+.divSobreMi p:last-child{
+    margin: 0 5px;
+}
+.perfil{
+    margin: 5px 0 20px 10px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+.divAside{
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.divAside>div{
+    display: flex;
+    border: 1px solid #f4f7fe;
+    padding: 4px 8px;
+    border-left: none;
+    font-size: 11px;
+}
+.divAside>div:first-child{
+    margin-top: 15px;
+    background-color: #e1e8f8;
+    font-weight: bold;
+}
+.divAside img{
+    width: 10px;
+    height: 12px;
+    margin: auto 0;
+    padding: 0 5px 0 0;
+}
+.divAside p{
+    margin: 0;
+}
+footer{
+    background: url("../img/fondo_pie.jpg") no-repeat bottom right;
+    color: #6ea2f0;
+    padding: 0 25px 25px 20px;
+}
+footer p{
+    margin: 0;
+    padding: 20px 0 0 0;
+    font-size: 12px;
+}

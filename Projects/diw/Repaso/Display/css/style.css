@@ -1,0 +1,99 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+/**********************************************************************************************************************
+HTML, HEADER y BODY */
+html{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+    margin: 2em auto;
+    font-family: Verdana, sans-serif;
+}
+h1{
+    margin: 1em 0;
+    border-bottom: 1px solid #000;
+}
+.comun{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0.5em 0;
+}
+.uno{
+    background-color: red;
+}
+.dos{
+    background-color: yellow;
+}
+.tres{
+    background-color: green;
+}
+.cuatro{
+    background-color: blue;
+}
+
+/**********************************************************************************************************************
+BLOCK (No podemos poner uno al lado del otro) */
+
+.block div{
+    width: 25%;
+    display: block;
+}
+
+/**********************************************************************************************************************
+INLINE (no se puede usar width) */
+
+.inline{
+    margin: 110px 0 150px 0;
+}
+.inline div{
+    display: inline;
+    margin: 100px 0 0 0;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+/**********************************************************************************************************************
+INLINE-BLOCK (hay una separación invisible entre cada div que me obliga a usar menos anchura) */
+
+.inlineBlock div{
+    display: inline-block;
+    width: 24.5%;
+}
+
+/**********************************************************************************************************************
+FLEX */
+
+.flex{
+    display: flex;
+}
+.flex div{
+    width: 25%;
+}
+
+/**********************************************************************************************************************
+FLOAT 1 (Me obliga a dar altura al elemento padre) */
+
+.float1{
+    height: 100px;
+}
+.float1 div{
+    width: 25%;
+    float: left;
+}
+
+/**********************************************************************************************************************
+FLOAT 2 */
+
+.float2{
+    height: 300px;
+}
+.float2 div:first-child{
+    width: 25%;
+    float: left;
+}
+.float2 div:nth-child(2){
+    width: 25%;
+    float: right;
+}

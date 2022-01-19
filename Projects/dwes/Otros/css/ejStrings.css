@@ -1,0 +1,93 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+html{
+    background-color: #bfbfbf;
+    font-family: Calibri, Verdana, sans-serif;
+    letter-spacing: 0.3px;
+}
+body{
+    width: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+header{
+    background-color: #333;
+    padding: 5px 0 5px;
+    color: #55affd;
+    width: 100%;
+    text-align: center;
+}
+body div{
+    padding: 0 20px 0 20px;
+}
+
+
+body>div>div>p{
+    padding: 0 0 0 10px;
+}
+div fieldset{
+    margin: 10px 150px 0 30px;
+    background-color: #b8b8b8;
+    border-radius: 5px;
+}
+legend{
+    padding: 0 5px 0 5px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+}
+body>div>div{
+    margin: 40px 0 0 0;
+}
+h3{
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 0;
+    border-radius: 3px;
+    box-shadow: 3px 0px 10px #8c8c8c, -3px 0px 10px #8c8c8c;
+
+}
+h6{
+    color: #888888;
+    margin-top: 15px;
+    padding: 0 20px 0 25px;
+}
+.codigo{
+    margin-left: 15px;
+}
+.array{
+    margin-left: 75px;
+}
+.tab{
+    margin-left: 30px;
+}
+
+
+footer{
+    background-color: #333;
+    color: #8c8c8c;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 40px 15px 40px;
+    font-size: 12px;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    font-family: Calibri, sans-serif;
+    padding: 0 20px 0 20px;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div>p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div>p:last-child{
+    margin-top: 2px;
+}

@@ -1,0 +1,227 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                                  Autor: DaVeGaLiSoT
+***********************************************************************************************************************/
+
+/**********************************************************************************************************************
+Pantallas grandes (desktops de menos de 1200px) */
+@media only screen and (max-width: 992px) {
+
+    /*****************************************************************/
+    /**************************** INDEX ******************************/
+    /*****************************************************************/
+    /* ancho fijo par todos los elementos de la web */
+    .width1500px{
+        max-width: 770px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .width1350px{
+        max-width: 750px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /************************** CAROUSEL  ****************************/
+
+    .div-carousel{
+        margin-top: 80px;
+    }
+
+    /************************** CUALIDADES ****************************/
+
+
+    /********************* NUESTRAS ACTIVIDADES  *********************/
+    .actividades{
+        font-size: 6vw;
+    }
+    .actividad {
+        flex-basis: 33%;
+    }
+    .actividad figcaption h2{
+        font-size: 2.4vw;
+    }
+
+    /* ODOMETER */
+    .foto-encima-footer .contadores-index{
+        font-size: 40px;
+    }
+    .foto-encima-footer .contadores-index p{
+        font-size: 20px;
+    }
+    .foto-encima-footer .contadores-index .contador h1{
+        font-size: 40px;
+    }
+
+    /******************* Imágen encima del footer  *******************/
+
+    /*****************************************************************/
+    /************************ QUIENES SOMOS **************************/
+    /*****************************************************************/
+    .section-quienes-somos .grupo-tpf{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .foto-titulo h1{
+        font-size: 80px;
+        top: 180px;
+    }
+    .blanco-tapa-h1{
+        top: 146px;
+    }
+    .grupo-tpf .col-xl-4{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .grupo-tpf .col-xl-8{
+        margin: 40px 0 0 0;
+        max-width: 908px;
+        padding: 0;
+    }
+    .fundaciones-img{
+        display: flex;
+        justify-content: space-around;
+    }
+    .fundaciones-img img{
+        align-self: center;
+    }
+
+    /*****************************************************************/
+    /************************* QUE HACEMOS ***************************/
+    /*****************************************************************/
+    .qh-img{
+        /*top: 110px;*/
+        width: 100%;
+    }
+
+    /*****************************************************************/
+    /************************** CONTACTO *****************************/
+    /*****************************************************************/
+    /**************************** MAPA *******************************/
+    /* posiciones en el mapa de cada sede */
+    #div_mexico{
+        bottom: 218px;
+        left: 112px;
+    }
+    #div_colombia{
+        bottom: 179px;
+        left: 202px;
+    }
+    #div_peru{
+        bottom: 142px;
+        left: 180px;
+    }
+    #div_barcelona{
+        bottom: 264px;
+        left: 569px;
+    }
+    #div_madrid{
+        bottom: 261px;
+        left: 545px;
+    }
+    #div_marruecos{
+        bottom: 245px;
+        left: 523px;
+    }
+
+    /********************* Iconos redirección GOOGLE MAPS *********************/
+    .iconos_mapa img{
+        width: 16px;
+    }
+    /* iconos de la izquierda (madrid, barcelona, lima) */
+    .iconos_mapa div:first-child{
+        bottom: 97px;
+        left: 903px;
+    }
+    .iconos_mapa div:first-child a:first-child{
+        position: relative;
+        top: 16px;
+    }
+    .iconos_mapa div:first-child a:nth-child(2){
+        position: relative;
+        top: 8px;
+    }
+    /* iconos de la derecha (bogotá, maroc, méxico) */
+    .iconos_mapa div:last-child{
+        bottom: 169px;
+        left: 1015px;
+    }
+    .iconos_mapa div:last-child a:first-child{
+        position: relative;
+        top: 16px;
+    }
+    .iconos_mapa div:last-child a:nth-child(2){
+        position: relative;
+        top: 8px;
+    }
+
+    /*****************************************************************/
+    /************************ COMUN ENCUESTAS ************************/
+    /*****************************************************************/
+
+    .estudio{
+        justify-content: center;
+    }
+    .bloque-2{
+        justify-content: center;
+    }
+    .texto-izq-encuesta{
+        font-size: 11.5px;
+    }
+    .mi-borde-radio{
+        min-width: 420px;
+    }
+    .div-comentarios{
+        min-width: 80%;
+    }
+    .rad > i{
+        width:  30px;
+        height: 30px;
+    }
+
+    /*****************************************************************/
+    /********************** REGISTRO ENCUESTA ************************/
+    /*****************************************************************/
+
+    #registro_encuesta td{
+        font-size: 11px;
+    }
+    #registro_encuesta th{
+        font-size: 9px;
+    }
+
+    /********************* Footer  *********************/
+    footer{
+        text-align: center;
+    }
+    footer h4{
+        margin-bottom: 10px;
+    }
+    footer .footer-flex{
+        flex-direction: column;
+    }
+    footer .footer-sobre{
+        margin: 10px auto;
+        min-width: 300px;
+    }
+    footer .footer-sobre p{
+        text-align: justify;
+    }
+    footer .footer-isos,
+    footer .rrss-logos{
+        display: none;
+    }
+    footer .footer-info,
+    footer .footer-telfs{
+        margin: 20px 0;
+    }
+    footer .footer-mQ-576 *{
+        display: block;
+        margin: 20px 0 0 0;
+    }
+    footer .footer-mQ-576 img{
+        margin: 0 auto;
+    }
+
+
+
+}

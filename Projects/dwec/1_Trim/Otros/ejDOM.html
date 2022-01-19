@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios DOM</title>
+    <meta name="title" content="Ejercicios DOM">
+    <meta name="description" content="Ejercicios DOM">
+    <meta name="keywords" content="HTML5, CSS, Javascript">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/ejDOM.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Ejercicios DOM</h1>
+    </header>
+    <div>
+        <fieldset> <!-- contenedor de cada ejercicio -->
+            <legend>Ocultar y visualizar texto</legend> <!-- título de cada ejercicio -->
+            <!-- el h6 es la descripción de cada ejercicio -->
+            <h6>Controlar la visibilidad de un texto mediante la pulsación en otro, que ponga mostrar Texto u Ocultar
+                texto según se encuentre el primero: Usar el modelo de gestión de eventos del W3C (addEventListener) y
+                controlar la visualización mediante propiedades css.</h6>
+            <p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget purus ligula. Aenean feugiat lacinia
+                diam, at venenatis ligula sodales id. Curabitur pulvinar dapibus arcu sed lobortis. Proin porttitor risus
+                ut ultrices finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan magna ac enim
+                sollicitudin, cursus gravida nulla vulputate. Integer libero urna, cursus nec pharetra at, gravida a mi.
+                Nunc iaculis finibus est eu mattis. Pellentesque vestibulum ex tincidunt neque tincidunt, sit amet pretium
+                eros aliquet. Nam semper nisl varius ante rutrum aliquet. Ut pretium urna a suscipit facilisis. Curabitur
+                et vehicula nibh. Sed convallis quam sollicitudin dolor vulputate aliquet. Pellentesque luctus ornare
+                ultricies.</p>
+            <p id="boton">Ocultar Texto</p>
+        </fieldset>
+        <fieldset>
+            <legend>Visualizar el destino de un enlace</legend>
+            <h6>Crear 6 enlaces y un elemento input del tipo text. Al pasar el ratón por cualquiera de los enlaces debe
+                presentar la dirección a la que apunta en el input.</h6>
+            <div>
+                <div>
+                    <p><a id="google" href="http://www.google.es" target="_blank">Enlace a Google</a></p>
+                    <p><a id="marca" href="http://www.marca.com" target="_blank">Enlace a Marca</a></p>
+                    <p><a id="elmundo" href="http://www.elmundo.es" target="_blank">Enlace a El Mundo</a></p>
+                    <p><a id="proRev" href="http://www.profesionalewview.com" target="_blank">Enlace a Profesional Review</a></p>
+                    <p><a id="mmo" href="http://www.mmo-champion.com" target="_blank">Enlace a MMO Champion</a></p>
+                    <p><a id="imgur" href="http://www.imgur.com" target="_blank">Enlace a Imgur</a></p>
+                </div>
+                <div>
+                    <input type="text" id="URL" readonly>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Insertar elementos en una lista</legend>
+            <h6>Vamos a crear la lista de la compra. Para ello dispondremos de unos elementos en la lista e iremos
+                añadiendo los que pongamos en un elemento del tipo input, cuando se pulse el botón añadir. Hay que
+                controlar la visibilidad de este para que sólo se active cuando tenemos algo en el campo input y se
+                desactive cuando agregamos, dejando el input vacío. Tenemos que crearlo mediante la adición de un nodo
+                al elemento UL.</h6>
+            <div>
+                <div>
+                    <ul id="ul"></ul>
+                </div>
+                <div>
+                    <div id="divLista"></div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <footer>
+        <div>
+            <div>
+                <p>Grado</p>
+                <p>Desarrollo de aplicaciones WEB</p>
+            </div>
+            <div>
+                <p>Clase</p>
+                <p>Desarrollo WEB Entorno Cliente</p>
+            </div>
+            <div>
+                <p>Profesor</p>
+                <p>Nacho Barnes</p>
+            </div>
+            <div>
+                <p>Autor</p>
+                <p>David Galiana Sotillo</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

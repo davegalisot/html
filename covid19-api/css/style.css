@@ -1,0 +1,226 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                                  Autor: DaVeGaLiSoT
+***********************************************************************************************************************/
+
+/*** import de fuente/s google fonts ***/
+@import url('https://fonts.googleapis.com/css?family=Acme|Anton|Kanit|Titillium+Web&display=swap');
+
+
+/**********************************************
+VARIABLES */
+:root{
+    --main-fondo: #bfbfbf;
+    --main-borde: #878787;
+}
+*{
+    font-family: "Kanit", sans-serif;
+}
+html{
+    /*background-color: #1d1d1d;*/
+}
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(226, 226, 226) 100%);
+}
+html, body{
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+}
+section{
+    text-align: center;
+    margin-top: 20px;
+}
+/* remove blue border bootstrap */
+.form-control:focus, .custom-select:focus{
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+/********************************/
+.mainData{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+div.covid-data{
+    text-align: center;
+}
+.covid-data h1{
+    color: red;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.6px;
+}
+.covid-data p{
+    display: inline;
+    /*color: #a8a8a8;*/
+    font-style: italic;
+    font-size: 13px;
+    margin: 0;
+    position: relative;
+    bottom: 14px;
+    left: 110px;
+}
+#mainCont, .apiData{
+    display: flex;
+    align-items: flex-end;
+}
+.rect{
+    text-align: center;
+    margin: 0 20px;
+}
+.rect .div2{
+    padding-bottom: 0;
+}
+.rect .div3{
+    padding: 0;
+}
+.rect .div4{
+    padding: 0;
+}
+.rect .div5{
+    padding-top: 0;
+}
+.rect .div3 p:last-child{
+    color: green;
+}
+.rect .div4 p:last-child{
+    color: red;
+}
+.rect div#wTData3{
+    padding: 0 35px;
+}
+.rect h3 {
+    font-size: 25px;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+.rect p{
+    font-size: 30px;
+    margin: 0;
+}
+.rect p:first-child{
+    color: var(--main-borde);
+}
+.rect .mainP{
+    margin-bottom: -15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.rect .mainPDate{
+    margin-bottom: -10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.rect .dataPDate{
+    font-size: 20px;
+}
+.mini-info{
+    font-size: 12px;
+}
+/* DATA BY COUNTRY */
+#byCountrySelect{
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 30px;
+}
+#byCountrySelect h2{
+    margin-bottom: 0;
+}
+#byCountrySelect .custom-select{
+    width: auto;
+}
+#byCountrySelect h2{
+    font-size: 24px;
+}
+#byCountrySelect p{
+    font-size: 13px;
+    font-style: italic;
+    color: #666666;
+    margin: -10px 0 2px 0;
+}
+#byCountrySelect label{
+    font-size: 13px;
+}
+#byCountrySelect select{
+    font-size: 13px;
+}
+#byCountryDiv{
+    flex-wrap: wrap;
+}
+
+/**********************************************************************************************************************
+LOADING PROGRESS BAR */
+
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.pace-inactive {
+    display: none;
+}
+.pace .pace-progress {
+    background: #000000;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+}
+.pace .pace-progress-inner {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #000000, 0 0 5px #000000;
+    opacity: 1.0;
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -moz-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    -o-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
+}
+.pace .pace-activity {
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    top: 15px;
+    right: 15px;
+    width: 14px;
+    height: 14px;
+    border: solid 2px transparent;
+    border-top-color: #000000;
+    border-left-color: #000000;
+    border-radius: 10px;
+    -webkit-animation: pace-spinner 400ms linear infinite;
+    -moz-animation: pace-spinner 400ms linear infinite;
+    -ms-animation: pace-spinner 400ms linear infinite;
+    -o-animation: pace-spinner 400ms linear infinite;
+    animation: pace-spinner 400ms linear infinite;
+}
+@-webkit-keyframes pace-spinner {
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-moz-keyframes pace-spinner {
+    0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-o-keyframes pace-spinner {
+    0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-ms-keyframes pace-spinner {
+    0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes pace-spinner {
+    0% { transform: rotate(0deg); transform: rotate(0deg); }
+    100% { transform: rotate(360deg); transform: rotate(360deg); }
+}

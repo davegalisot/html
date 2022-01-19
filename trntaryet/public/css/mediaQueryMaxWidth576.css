@@ -1,0 +1,164 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                                  Autor: DaVeGaLiSoT
+***********************************************************************************************************************/
+
+/**********************************************************************************************************************
+Pantallas grandes (desktops de menos de 1200px) */
+@media only screen and (max-width: 575.98px) {
+
+    /*****************************************************************/
+    /**************************** INDEX ******************************/
+    /*****************************************************************/
+    /* ancho fijo par todos los elementos de la web */
+    .width1500px{
+        max-width: 550px;
+    }
+    .width1350px{
+        max-width: 550px;
+    }
+
+    /************************** CAROUSEL ****************************/
+
+    .carousel-caption{
+        display: none;
+    }
+    .fondo-carousel{
+        display: none;
+    }
+
+    /************************** CUALIDADES ****************************/
+
+    .div-cualidades p{
+        font-size: 12px;
+    }
+
+    /************************** FONDO SLIDER ****************************/
+
+    .fondo-slider{
+        padding: 25px 0;
+    }
+
+    /********************* NUESTRAS ACTIVIDADES  *********************/
+
+    .actividades{
+        font-size: 7vw;
+        text-align: center;
+    }
+    .actividad{
+        margin: 0 auto;
+    }
+    .actividad figcaption h2{
+        font-size: 30px;
+    }
+    .div-actividades img{
+        width: 500px;
+    }
+    #parrafo-actividades-row{
+        display: flex;
+        flex-direction: column;
+    }
+    #parrafo-actividades .col-1{
+        display: none;
+    }
+    #parrafo-actividades .col-12{
+        padding: 0 25px;
+        width: 550px;
+        margin: 0 auto;
+    }
+    #parrafo-actividades .col-12 h1{
+        padding: 20px 0 0 0;
+    }
+
+
+    /********************* IMAGEN ENCIMA FOOTER  *********************/
+    /* ODOMETER */
+    .foto-encima-footer .contadores-index{
+        flex-direction: column;
+        font-size: 30px;
+    }
+    .foto-encima-footer .contadores-index p{
+        font-size: 16px;
+    }
+    .foto-encima-footer .contadores-index .contador,
+    .foto-encima-footer .contadores-index .segundo-contador,
+    .foto-encima-footer .contadores-index .tercer-contador{
+        padding: 0;
+    }
+    .foto-encima-footer .segundo-contador{
+        margin: 20px 0;
+    }
+    .foto-encima-footer .contadores-index .contador h1{
+        font-size: 30px;
+        bottom: 2px;
+    }
+
+    /*****************************************************************/
+    /************************ QUIENES SOMOS **************************/
+    /*****************************************************************/
+
+    .h1-centrado span{
+        font-size: 60px;
+    }
+
+    /*****************************************************************/
+    /************************** CONTACTO *****************************/
+    /*****************************************************************/
+    /**************************** MAPA *******************************/
+    /* posiciones en el mapa de cada sede */
+    #div_mexico{
+        bottom: 218px;
+        left: 112px;
+    }
+    #div_colombia{
+        bottom: 179px;
+        left: 202px;
+    }
+    #div_peru{
+        bottom: 142px;
+        left: 180px;
+    }
+    #div_barcelona{
+        bottom: 264px;
+        left: 569px;
+    }
+    #div_madrid{
+        bottom: 261px;
+        left: 545px;
+    }
+    #div_marruecos{
+        bottom: 245px;
+        left: 523px;
+    }
+
+    /********************* Iconos redirección GOOGLE MAPS *********************/
+    .iconos_mapa img{
+        width: 16px;
+    }
+    /* iconos de la izquierda (madrid, barcelona, lima) */
+    .iconos_mapa div:first-child{
+        bottom: 97px;
+        left: 903px;
+    }
+    .iconos_mapa div:first-child a:first-child{
+        position: relative;
+        top: 16px;
+    }
+    .iconos_mapa div:first-child a:nth-child(2){
+        position: relative;
+        top: 8px;
+    }
+    /* iconos de la derecha (bogotá, maroc, méxico) */
+    .iconos_mapa div:last-child{
+        bottom: 169px;
+        left: 1015px;
+    }
+    .iconos_mapa div:last-child a:first-child{
+        position: relative;
+        top: 16px;
+    }
+    .iconos_mapa div:last-child a:nth-child(2){
+        position: relative;
+        top: 8px;
+    }
+
+}

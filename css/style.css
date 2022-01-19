@@ -1,0 +1,665 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                                  Autor: DaVeGaLiSoT
+***********************************************************************************************************************/
+
+/***********************************************************************************************************************
+IMPORT FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Ubuntu:wght@500&display=swap');
+
+@font-face {
+    font-family: myFont;
+    src: url("../font/Drugs.otf");
+}
+@font-face {
+    font-family: "Raleway";
+    src: url("../font/Raleway-Regular.ttf");
+}
+@font-face {
+    font-family: "Raleway-semibold";
+    src: url("../font/Raleway-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Raleway-bold";
+    src: url("../font/Raleway-Bold.ttf");
+}
+*{
+    user-select: none;
+}
+p{
+    margin: 0;
+}
+
+/***********************************************************************************************************************
+VARIABLES */
+
+:root{
+    --amarillo-logo: #F6AC20;
+    --fondo-oscuro: #1b2735;
+    --fondo-mas-oscuro: #252934;
+    --fondo-aun-mas-oscuro: #1b242f;
+    --fuente-oscuro: #444649;
+    --color-salmon: #F56C5F;
+    --color-azul: #4798F5;
+    --color-verde: #04c986;
+    --fondo-contacto: #252934;
+    --comp-1: #95B7DE;
+    --comp-2: #362221;
+    --comp-3: #313616;
+    --comp-4: #78823C;
+}
+
+/***********************************************************************************************************************
+HTML & BODY */
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/***********************************************************************************************************************
+COMÚN */
+.section-title{
+    color: var(--fuente-oscuro);
+    font-family: "Raleway-bold", sans-serif;
+    font-size: 40px;
+    position: relative;
+}
+.title-line {
+    background-color: var(--fuente-oscuro);
+    height: 4px;
+    margin: 25px 0 25px 0;
+    width: 70px;
+}
+.disable-hover {
+    pointer-events: none;
+}
+
+/***********************************************************************************************************************
+BTN GO TO TOP */
+#btn-go-to-top{
+    position: fixed;
+    right: -60px;
+    bottom: 60px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+#btn-go-to-top img{
+    width: 60px;
+}
+
+/***********************************************************************************************************************
+SECTION */
+section{
+    padding: 120px 0;
+}
+
+/***********************************************************************************************************************
+SECTION HOME */
+#home{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: var(--fondo-oscuro); /* Old browsers */
+    background: -moz-linear-gradient(0deg,  #191d1e 50%, #283139 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#191d1e), color-stop(100%,#283139)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* IE10+ */
+    background: linear-gradient(90deg, var(--fondo-oscuro), var(--comp-2), var(--fondo-oscuro), var(--comp-2)); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed;
+    background-size: 400% 400%;
+    animation: gradient 45s ease infinite;
+}
+@keyframes gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* particles */
+#projector{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 5s;
+}
+/*****************/
+#title{
+    margin: auto;
+    z-index: 2;
+}
+#title div{
+    width: 600px;
+    height: 150px;
+    position: relative;
+    top: 54%;
+    background: url("../img/logos/davegalisot-wd-logo-grande-fondo-negro.png") no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    opacity: 0;
+}
+#div-btn-trabajo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 80px auto;
+    z-index: 2;
+}
+#btn-trabajo{
+    color: var(--fondo-aun-mas-oscuro);
+    background-color: var(--amarillo-logo);
+    letter-spacing: 1px;
+    font-family: "Raleway-bold", sans-serif;
+    cursor: pointer;
+    padding: 8px 12px;
+    /*border-radius: 8px;*/
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+#div-btn-trabajo img{
+    width: 20px;
+    opacity: 0;
+    transition: opacity 0.4s;
+    position: relative;
+    top: 12px;
+}
+#btn-trabajo:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 300%;
+    opacity: 0;
+    transform: rotate(30deg);
+    background: rgba(255, 255, 255, 0.23);
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.13) 0%,
+            rgba(255, 255, 255, 0.13) 77%,
+            rgba(255, 255, 255, 0.5) 92%,
+            rgba(255, 255, 255, 0.0) 100%
+    );
+}
+/* Hover state - trigger effect */
+#btn-trabajo:hover:after {
+    opacity: 1;
+    left: 130%;
+    transition-property: left, top, opacity;
+    transition-duration: 0.7s, 0.7s, 0.15s;
+    transition-timing-function: ease;
+}
+/* Active state */
+#btn-trabajo:active:after {
+    opacity: 0;
+}
+
+/***********************************************************************************************************************
+NAV */
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--fondo-aun-mas-oscuro);
+    z-index: 100;
+}
+nav #menu-links{
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    transition: height 0.3s ease-out;
+    width: 100%;
+
+}
+nav #menu-links .page-link{
+    cursor: pointer;
+    background: none;
+    color: white;
+    border: 0;
+    padding: 15px 10px 11px 10px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+}
+nav #menu-links .page-link:hover{
+    color: var(--color-salmon);
+}
+#myBar{
+    align-self: flex-start;
+    width: 0%;
+    height: 4px;
+    background-color: var(--color-salmon);
+    z-index: 101;
+}
+
+/***********************************************************************************************************************
+PROYECTOS */
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#projects .section-title, #projects .title-line{
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+/* PORTFOLIO */
+#portfolio {
+    max-width: 1200px;
+    margin: 20px auto 20px auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    text-transform: uppercase;
+    opacity: 0;
+}
+#main-bar{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 4;
+}
+#floated-bar{
+    bottom: 0;
+    left: 30px;
+    top: 0;
+    background: var(--color-salmon);
+    border-radius: 1px;
+    margin: auto 0;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    z-index: 4;
+}
+#fondo-bars{
+    position: absolute;
+    top: 4px;
+    width: 500px;
+    height: 32px;
+    background-color: rgba(255, 0, 0, 0.1);
+    z-index: 0;
+}
+#main-bar, #floated-hidden-bar{
+    text-align: center;
+    padding: 5px;
+}
+#main-bar div, #floated-hidden-bar div{
+    margin: 0 20px;
+}
+#floated-bar{
+    pointer-events: none;
+}
+#floated-bar #floated-hidden-bar{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 0;
+    left: -30px;
+    position: absolute;
+    top: 0;
+    margin: auto 0;
+    transition: left 0.4s ease-in-out;
+}
+#portfolio-buttons .controls {
+    cursor: pointer;
+    font-family: "Raleway-semibold", sans-serif;
+    font-size: 26px;
+    padding: 0 20px;
+    transition: background-color 0.4s;
+}
+#floated-hidden-bar .controls {
+    color: #fff;
+}
+#portfolio-content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    padding: 0 40px;
+}
+#portfolio img {
+    margin: 0;
+    padding: 0;
+}
+#portfolio figure{
+    padding: 0;
+    margin: 0 10px;
+    box-shadow: 4px 4px 5px 0 rgba(0,0,0,0.4);
+    transition: all 0.4s;
+}
+#portfolio figure figcaption .fig-link{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+#portfolio figure figcaption .fig-link p{
+    margin: auto 10px auto 0;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+}
+#portfolio figure figcaption .fig-link .fa-arrow-alt-circle-right{
+    margin: auto 0;
+}
+#portfolio figure.port-img {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    max-width: 400px;
+    color: white;
+    text-align: center;
+    -webkit-perspective: 50em;
+    perspective: 50em;
+}
+#portfolio figure.port-img img {
+    width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+#portfolio figure.port-img figcaption {
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+#portfolio figure.port-img h4,
+#portfolio figure.port-img h3,
+#portfolio figure.port-img h5 {
+    margin: 0;
+    text-transform: uppercase;
+}
+#portfolio figure.port-img h2 {
+    margin: 10px 0;
+    color: var(--color-azul);
+    font-family: "Raleway-semibold", sans-serif;
+}
+#portfolio figure.port-img h3{
+    color: var(--color-salmon);
+    font-family: "Raleway-semibold", sans-serif;
+}
+#portfolio figure.port-img h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+#portfolio figure.port-img h5 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+#portfolio figure.port-img i {
+    font-size: 32px;
+}
+#portfolio figure.port-img:after {
+    background-color: var(--fondo-contacto);
+    position: absolute;
+    content: "";
+    display: block;
+    top: 16px;
+    left: 20px;
+    right: 20px;
+    bottom: 28px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: 0;
+}
+#portfolio figure.port-img a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+#portfolio figure.port-img:hover figcaption,
+#portfolio figure.port-img.hover figcaption {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-60%);
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+#portfolio figure.port-img:hover:after,
+#portfolio figure.port-img.hover:after {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 0.9;
+}
+#portfolio figure.port-img.hover > img{
+    transform: scale(1.1);
+}
+
+/***********************************************************************************************************************
+CONTACTO */
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( rgba(37, 41, 52, 0.99), rgba(37, 41, 52, 0.95) ),
+    url("../img/backgrounds/background-dark-textured.jpg") no-repeat fixed;
+    background-size: cover;
+}
+#contacto .section-title,
+#contacto .title-line{
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+#contacto .section-title {
+    color: white;
+}
+#contacto .title-line{
+    background-color: white;
+}
+#contacto .pregunta{
+    margin: 60px 0 30px 0;
+    font-family: "Raleway-semibold", sans-serif;
+    opacity: 0;
+    font-size: 20px;
+    color: var(--color-azul);
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 50px 0;
+    min-width: 30vw;
+    opacity: 0;
+}
+#contact-form input,
+#contact-form textarea {
+    background-color: var(--fondo-aun-mas-oscuro);
+    border: none;
+    margin: 2px 0;
+    padding: 8px 0 8px 10px;
+    color: white;
+    font-size: 18px;
+    font-family: "Raleway-bold", sans-serif;
+}
+#contact-form textarea:focus,
+#contact-form input:focus {
+    outline: none;
+}
+#contact-form textarea{
+    min-height: 200px;
+}
+input#submit-btn{
+    align-self: flex-end;
+    background-color: var(--color-salmon);
+    color: var(--fondo-aun-mas-oscuro);
+    font-family: "Raleway-bold", sans-serif;
+    width: 100px;
+    padding: 6px 0;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+input::placeholder, textarea::placeholder{
+    font-family: "Raleway-bold", sans-serif;
+}
+
+/***********************************************************************************************************************
+FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0 80px 0;
+    background-color: var(--fondo-aun-mas-oscuro);
+    color: white;
+}
+footer .firma p {
+    font-family: "Ubuntu", sans-serif;
+}
+footer .firma span{
+    color: var(--color-salmon);
+}
+.rrss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 80px 0 50px 0;
+    opacity: 0;
+    transition: opacity 2s;
+}
+.rrss img{
+    width: 30px;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: var(--fondo-mas-oscuro);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, opacity 0.4s;
+}
+.rrss img:hover{
+    transform: scale(0.9);
+    background-color: var(--color-azul);
+}
+
+/**********************************************************************************************************************
+LOADING PAGE BAR */
+
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.pace-inactive {
+    display: none;
+}
+.pace .pace-progress {
+    background: var(--amarillo-logo);
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+}
+.pace .pace-progress-inner {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
+    opacity: 1.0;
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -moz-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    -o-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
+}
+.pace .pace-activity {
+    display: block;
+    position: fixed;
+    z-index: 2000;
+    top: 15px;
+    right: 15px;
+    width: 14px;
+    height: 14px;
+    border: solid 2px transparent;
+    border-top-color: #ffffff;
+    border-left-color: #ffffff;
+    border-radius: 10px;
+    -webkit-animation: pace-spinner 400ms linear infinite;
+    -moz-animation: pace-spinner 400ms linear infinite;
+    -ms-animation: pace-spinner 400ms linear infinite;
+    -o-animation: pace-spinner 400ms linear infinite;
+    animation: pace-spinner 400ms linear infinite;
+}
+@-webkit-keyframes pace-spinner {
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-moz-keyframes pace-spinner {
+    0% { -moz-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-o-keyframes pace-spinner {
+    0% { -o-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@-ms-keyframes pace-spinner {
+    0% { -ms-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+@keyframes pace-spinner {
+    0% { transform: rotate(0deg); transform: rotate(0deg); }
+    100% { transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+/**********************************************************************************************************************
+MEDIA QUERIES */
+
+/*Pantallas grandes (desktops de menos de 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+/*Pantallas medianas (tablets de menos de 992px)*/
+@media (max-width: 991.98px) {
+
+}
+
+/*Pantallas pequeñas (móviles en landscape de menos de 768px)*/
+@media (max-width: 767.98px) {
+
+}
+
+/*Pantallas muy pequeñas (móviles en portrait de menos de 576px)*/
+@media (max-width: 575.98px) {
+
+}

@@ -1,0 +1,210 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:700');
+
+*{
+    font-family: 'Source Code Pro', monospace;
+}
+
+/**********************************************************************************************************************
+HTML, HEADER y BODY */
+
+html{
+    background-color: #bfbfbf;
+    margin: 10px 0;
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+}
+
+/**********************************************************************************************************************
+HEADER */
+
+header{
+    background: #333;
+    color: #55affd;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/**********************************************************************************************************************
+BODY */
+
+body{
+    max-width: 1000px;
+    height: 2000px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+
+/**********************************************************************************************************************
+FORM */
+
+/** DATOS PERSONALES */
+
+fieldset{
+    margin: 20px auto;
+    width: 600px;
+    background: #d8d8d8;
+    border-style: none;
+    border-radius: 5px;
+}
+
+/** DATOS LOGIN */
+
+.fieldset{
+    width: 300px;
+    margin: 0 5px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin-left: 280px;
+}
+#password{
+    opacity: 0;
+    background: #d8d8d8;
+    border-style:  none;
+    border-radius: 5px;
+    padding: 5px 15px 0 10px;
+    margin: 30px 0 0 0;
+}
+ul li{
+    font-size: 12px;
+}
+legend{
+    padding: 0 5px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+form div.flex{
+    display: flex;
+}
+form div.flex div:nth-child(n+2){
+    padding: 0 0 0 40px;
+}
+form div{
+    display: block;
+}
+form p{
+    margin: 3px 0;
+    font-size: 10px;
+}
+form div p{
+    margin: 3px 0;
+    font-size: 0.9em;
+}
+.ancho{
+    width: 250px;
+}
+.ancho2{
+    width: 400px;
+}
+.cp{
+    width: 100px;
+}
+
+/* BOTON ENVIAR */
+
+.botonEnviar{
+    text-align: center;
+    margin: 15px 0;
+}
+.enviar{
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+}
+
+/* SPAN HEADER */
+
+#spanHeader{
+    opacity: 0;
+}
+
+/* CLASES PARA LOS MENSAJES DE ERROR */
+
+.oculto{
+    opacity: 0;
+    font-size: 11px;
+}
+.error{
+    opacity: 1;
+    color: #ff0000;
+    font-size: 11px;
+}
+
+/**********************************************************************************************************************
+INPUT */
+
+fieldset input{
+    border-radius: 2px;
+    border: 1px solid #b6b6b6;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+#reloj{
+    text-align: right;
+}
+footer{
+    font-family: 'Raleway', sans-serif;
+    background-color: #333;
+    color: #a5a5a5;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 40px 15px 40px;
+    font-size: 11px;
+    cursor: default;
+    user-select: none;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div p:last-child{
+    margin-top: 2px;
+}
+
+/**********************************************************************************************************************
+***********************************************************************************************************************
+MEDIA QUERIES
+***********************************************************************************************************************
+***********************************************************************************************************************/
+
+/* Pantallas grandes (desktops de menos de 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* Pantallas medianas (tablets de menos de 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
+@media (max-width: 767.98px) {
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        margin-left: 200px;
+    }
+}
+
+/* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+@media (max-width: 575.98px) {
+
+}

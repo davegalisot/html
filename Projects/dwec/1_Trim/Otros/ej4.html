@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4</title>
+    <script>
+      function punto1_2() {
+        var texto = prompt("dame un texto");
+        while (texto == null)texto=" ";
+        document.write("<H1>"+texto+"</H1>");
+      }
+      function punto3() {
+        var fechaActual = new Date();
+        var diaActual = fechaActual.getDay();
+        var dia = prompt("dame dia");
+        var mes = prompt("dame mes");
+        var anio = prompt("dame año");
+        var fechaDada = new Date(anio,mes,dia,);
+
+
+        var resultado = Math.floor(Math.abs(fechaDada - fechaActual)/(24*3600*100));
+        alert(resultado);
+      }
+    </script>
+</head>
+<body>
+<input type="button" value="Punto 1 y 2" onclick=punto1_2()>
+<br/>
+<br/>
+<input type="button" value="Punto 3" onclick=punto3()>
+</body>
+</html>

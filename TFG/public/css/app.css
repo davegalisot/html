@@ -1,0 +1,76 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                                  Autor: DaVeGaLiSoT
+***********************************************************************************************************************/
+
+/* APP */
+
+/**********************************************************************************************************************
+NOTICIAS */
+
+.borde{
+    box-shadow: #8c8c8c 1px 1px 15px;
+    border-radius: 5px;
+}
+.borde *{
+    font-size: 1.2em;
+}
+.separado{
+    margin: 20px;
+}
+.imagen{
+    height: 200px;
+    border-radius: 5%;
+}
+.imgProductos img{
+    width: 350px;
+    height: 195px;
+    border-radius: 1%;
+}
+
+/* SECTION */
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section a{
+    padding: 40px 10px 0 10px;
+    outline:none;
+    cursor:pointer;
+    color: #000;
+}
+section a:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+/* ARTICLE */
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    margin: 0 0 40px 0;
+}
+article img{
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+article div p{
+    font-family: 'Roboto', sans-serif;;
+    font-weight: bold;
+    color: #ffae1b;
+    font-size: 1em;
+}
+
+/**********************************************************************************************************************
+NOTICIA */
+
+.titulillo{
+    width: 100%;
+}
+.fecha{
+    font-size: 14px;
+}

@@ -1,0 +1,97 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
+
+/**********************************************************************************************************************
+HTML, HEADER y BODY */
+
+html{
+    background: #ececec;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+}
+
+/**********************************************************************************************************************
+HEADER */
+
+header{
+    padding: 25px;
+    margin-top: 0;
+}
+header h1{
+    font-size: 2em;
+    margin: 0;
+    border-bottom: 1px solid #333;
+    color: #323ad3;
+}
+
+/**********************************************************************************************************************
+BODY */
+
+body{
+    width: 1000px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+
+body div{
+    padding: 5px 30px;
+}
+h2{
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+/**********************************************************************************************************************
+FORM */
+
+.contenedor{
+    margin: 10px 20px;
+}
+form input[type="reset"], form [type="button"]{
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    padding: 2px 5px;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+footer{
+    font-family: 'Raleway', sans-serif;
+    background-color: #333;
+    color: #a5a5a5;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 40px 15px 40px;
+    font-size: 12px;
+    cursor: default;
+    user-select: none;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div>p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div>p:last-child{
+    margin-top: 2px;
+}
+#reloj{
+    text-align: right;
+}

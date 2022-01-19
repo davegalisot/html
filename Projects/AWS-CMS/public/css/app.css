@@ -1,0 +1,36 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+
+/**********************************************************************************************************************
+NOTICIAS */
+
+.borde{
+    box-shadow: #8c8c8c 1px 1px 15px;
+    border-radius: 5px;
+}
+.borde *{
+    font-size: 1.2em;
+}
+.separado{
+    margin: 20px;
+}
+.fecha{
+    font-size: 12px;
+}
+.autor{
+    font-size: 12px;
+    color: #969696;
+}
+.tituloNoticia{
+    font-size: 1.6em;
+}
+.textoNoticia{
+    font-size: 1em;
+}
+.imagen{
+    height: 100px;
+}
+.guardaEspacioImagenNoticia{
+    height: 100px;
+}

@@ -1,0 +1,442 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                                  Autor: DaVeGaLiSoT
+***********************************************************************************************************************/
+
+/*** variables ***/
+:root{
+    --fondo: #1e1e1e;
+}
+
+/**********************************************************************************************************************
+HTML */
+
+html{
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+    overflow: auto;
+}
+a:hover{
+    text-decoration: none;
+}
+a:hover i{
+    color: white;
+}
+
+/**********************************************************************************************************************
+BODY */
+
+body{
+    height: 100vh;
+    /*width: 100vw;*/
+    background: url("../img/logo/bocabulario-opacidad20.png") var(--fondo) 50% 23%;
+    background-size: 900px;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/**********************************************************************************************************************
+HEADER */
+
+/**********************************************************************************************************************
+INDEX */
+
+section{
+    margin-top: 80px;
+}
+legend{
+    font-size: medium;
+    padding: 0 5px;
+}
+div.generador,
+div.texto_comprobante{
+    margin: 0 0 40px 0;
+    color: white;
+}
+div.texto_comprobante h1{
+    transition: all 0.2s 0s;
+}
+.normal{
+    color: white;
+    text-shadow: 1px 1px 15px rgba(0,0,0,0.3),
+                    1px -1px 15px rgba(0,0,0,0.3),
+                    -1px -1px 15px rgba(0,0,0,0.3),
+                    -1px 1px 15px rgba(0,0,0,0.3);
+}
+
+/* Texto COMPROBAR */
+div.texto_comprobante *{
+    margin: 0;
+}
+div.texto_comprobante h1{
+    font-size: 100px;
+}
+div.texto_comprobante h2{
+    font-size: 60px;
+}
+div.texto_comprobante p{
+    font-size: 30px;
+}
+p#comentario{
+    font-size: medium;
+}
+
+/* div del botón COMPROBAR */
+div.div_boton_comprobar{
+    margin: 20px 0 0 0;
+}
+
+/* input COMPROBAR */
+input#introducido{
+    border: 5px solid var(--fondo);
+    transition: all 0.2s 0s;
+}
+input#introducido:focus{
+    outline: none;
+    border: 5px solid #a5e0ff;
+}
+ /* botón comprobar */
+
+a#boton_comprobar,
+a#modificar_vocabulario,
+a#generar_nueva{
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #73a2ff;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    transition: all 1s 0s;
+}
+a#modificar_vocabulario{
+    width: 380px;
+}
+a#generar_nueva{
+    width: 380px;
+}
+a#boton_comprobar svg,
+a#boton_comprobar svg rect,
+a#modificar_vocabulario svg,
+a#modificar_vocabulario svg rect,
+a#generar_nueva svg,
+a#generar_nueva svg rect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    border-radius: 10px;
+    transition: all 1s 0s;
+    z-index: 1;
+}
+a#boton_comprobar svg rect,
+a#modificar_vocabulario svg rect,
+a#generar_nueva svg rect{
+    stroke: #73a2ff;
+    stroke-width: 8;
+    transition: 1s;
+    stroke-dasharray: 60, 200;
+    stroke-dashoffset: 290;
+}
+a#modificar_vocabulario svg rect,
+a#generar_nueva svg rect{
+    stroke-dasharray: 60, 380;
+    stroke-dashoffset: 470;
+}
+a#boton_comprobar:hover,
+a#modificar_vocabulario:hover,
+a#generar_nueva:hover{
+    background-color: var(--fondo);
+}
+a#boton_comprobar:hover svg rect,
+a#modificar_vocabulario:hover svg rect,
+a#generar_nueva:hover svg rect{
+    stroke-dasharray: 320, 0;
+    stroke-dashoffset: 0;
+    cursor: pointer;
+}
+a#modificar_vocabulario:hover svg rect,
+a#generar_nueva:hover svg rect{
+    stroke-dasharray: 380, 0;
+    stroke-dashoffset: 0;
+}
+a#boton_comprobar:hover svg,
+a#modificar_vocabulario:hover svg,
+a#generar_nueva:hover svg{
+    border-radius: 10px;
+}
+
+/* TODOS LOS INPUTS BUTTON */
+input[type="button"]{
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--fondo);
+}
+/****************************/
+div.div_boton_comprobar input:hover{
+    background-color: white;
+    color: #000;
+}
+div.div_modificar_vocabulario{
+    margin-top: 100px;
+}
+
+h2#texto_adivinar{
+    opacity: 0;
+    transition: all 1s 0s;
+}
+div.div_oculto{
+    display: none;
+}
+.vibracion{
+    animation: shake 0.6s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-8px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(8px, 0, 0);
+    }
+}
+
+/**********************************************************************************************************************
+EDITAR */
+
+/* tabla falsa */
+.scroll-fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+.scroll-fixed tr:first-child th:first-child{
+    background-color: var(--fondo);
+    border-top: 1px solid var(--fondo);
+    border-left: 1px solid var(--fondo);
+}
+.scroll-fixed th:last-child{
+    width: 71px;
+}
+
+/* div lista del vocabulario */
+div.lista_vocabulario{
+    color: white;
+}
+.contador_palabras{
+    margin-top: 20px;
+}
+
+/**********************************************************************************************************************
+TABLE */
+
+/* boton go to bottom */
+#goToBottom{
+    color: #007bff;
+}
+#goToBottom:hover{
+    cursor: pointer;
+}
+/**********************/
+table{
+    font-size: 13px;
+    border-collapse: collapse;
+    z-index: 1;
+}
+#mi-tabla th:first-child{
+    visibility: hidden;
+}
+table td:first-child{
+    padding: 8px 10px;
+}
+table td,
+table th{
+    border: 0.1px solid #ddd;
+    padding: 8px 5px;
+}
+table tr:nth-child(odd){
+    background-color: #414141;
+}
+table tr:nth-child(even){
+    background-color: var(--fondo);
+}
+table tr:nth-child(2){
+    padding: 12px 0;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+}
+table tr:nth-child(2):hover{
+    background-color: #007bff;
+    color: white;
+}
+table tr:hover{
+    background-color: #727272;
+    cursor: default;
+}
+table th{
+    padding: 12px 0;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+}
+table td a:first-child{
+    margin-right: 10px;
+}
+table i{
+    font-size: 25px;
+}
+#mi-tabla tr th:nth-child(5){
+    min-width: 72px;
+}
+/* iconos habilitar */
+.verde{
+    color: #28b776;
+}
+.rojo{
+    color: #ad211f;
+}
+/********************/
+
+div.div_volver i{
+    margin: 20px 0 0 0;
+    font-size: 40px;
+}
+
+/* botonera */
+div.div_nuevo{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+div.div_nuevo i{
+    color: #007bff;
+    cursor: pointer;
+    font-size: 40px;
+    margin-left: 18px;
+}
+div.div_nuevo a:hover i{
+    color: white;
+}
+div.botonera{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+}
+div.botonera div{
+    position: relative;
+    bottom: 17px;
+}
+div.botonera div:nth-child(n+2){
+    margin-left: 10px;
+}
+div.botonera p{
+    margin: 0 0 0 5px;
+}
+div.info_tabla{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+div.info_tabla p{
+    margin: 0;
+}
+
+/**********************************************************************************************************************
+MENSAJES */
+
+.mensajes{
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    z-index: 3;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+footer{
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+footer div{
+    margin: 50px;
+}
+footer img{
+    width: 200px;
+}
+
+/**********************************************************************************************************************
+MEDIA QUERIES */
+
+/*Pantallas grandes (desktops de menos de 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+/*Pantallas medianas (tablets de menos de 992px)*/
+@media (max-width: 991.98px) {
+
+}
+
+/*Pantallas pequeñas (móviles en landscape de menos de 768px)*/
+@media (max-width: 767.98px) {
+    table{
+        font-size: smaller;
+    }
+    table th,
+    table td{
+        padding: 5px 5px;
+    }
+    table td a:first-child{
+        margin-right: 2px;
+    }
+    footer{
+        height: 50px;
+    }
+    footer img{
+        width: 80px;
+    }
+}
+
+/*Pantallas muy pequeñas (móviles en portrait de menos de 576px)*/
+@media (max-width: 575.98px) {
+    table{
+        font-size: smaller;
+    }
+    table th,
+    table td{
+        padding: 5px 5px;
+    }
+    table td a:first-child{
+        margin-right: 2px;
+    }
+    footer{
+        height: 50px;
+    }
+    footer img{
+        width: 80px;
+    }
+}

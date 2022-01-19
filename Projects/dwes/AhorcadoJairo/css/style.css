@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Chalk;
+    src: url("../fonts/DKCrayonCrumble.ttf");
+}
+html{
+    background: #faf2cc;
+    font-family: Chalk, serif;
+    color: #ffffff;
+    font-size: 2em;
+    text-align: center;
+}
+body{
+    margin: 0 auto;
+    width: 1000px;
+    height: 700px;
+    background: url("../img/pizarra.svg");
+    background-size: 100%;
+}
+.reiniciar{
+    font-size: 0.8em;
+    text-align: right;
+    padding: 80px 80px 0 0;
+    cursor: pointer;
+}
+.palabra{
+    padding: 0 0 1em 0;
+}
+.titulo{
+    font-size: 2em;
+}
+input[type="text"]{
+    font-family: Chalk, serif;
+    font-size: 1em;
+    border: 0;
+    background: none;
+    border-bottom: 3px solid #ffffff;
+    width: 1em;
+    color: #ffffff;
+    outline: none;
+    padding: 0 0 0 0.2em;
+}
+.mensaje{
+    text-align: right;
+    padding: 0 100px 0 0;
+    height: 50px;
+}
+.monigote{
+    float: left;
+    text-align: left;
+    margin: -50px 0 0 110px;
+}
+.monigote svg{
+    margin: 0 0 -12px 0;
+}
+.soporte {
+    border: 3px solid #ffffff;
+    height: 1em;
+    width: 200px;
+    padding: 0.2em 0 0.2em 0.3em;
+}
+.resuelta{
+    float: right;
+    padding: 166px 100px 0 0;
+}
+.caja{
+    font-size: 1em;
+    border-bottom: 3px;
+    margin-right: 0.3em;
+    width: 1em;
+    padding: 0 0.2em;
+}
+.ocultar{
+    opacity: 0;
+}
+.mostrar{
+    opacity: 1;
+}

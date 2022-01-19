@@ -1,0 +1,399 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                                  Autor: DaVeGaLiSoT
+***********************************************************************************************************************/
+
+/* COMUN PARA LAS DOS PARTES (FRONT & BACK) */
+
+/**********************************************************************************************************************
+HTML */
+
+html{
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+    overflow-y: scroll;
+}
+
+/**********************************************************************************************************************
+BODY */
+
+body{
+    background-color: #ECEFF1;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Titillium Web', sans-serif;
+    color: #263238;
+    margin: 100px auto 0 auto;
+    padding: 0;
+    min-height: 1000px;
+}
+
+
+/**********************************************************************************************************************
+HEADER */
+
+header{
+    padding-bottom: 5px;
+    background-color: #ffae1b;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.login{
+    margin-top: 20px;
+}
+.login a{
+    padding: 8px 16px;
+    margin: auto 0;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #fff 50%, black 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+.login a:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #000000 50%, transparent 50%);
+    z-index: -1;
+}
+.login a:hover{
+    text-decoration: none;
+}
+.login a,
+.login a:after {
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s;
+}
+
+.login a:hover,
+.login a:hover:after {
+    background-position: 0;
+}
+.titulo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+}
+.titulo a {
+    margin: auto 0;
+    /*color: #000;*/
+    text-decoration: unset;
+}
+.imgLogo{
+    width: 110px;
+}
+#logo{
+    padding: 0 0 0 40px;
+}
+
+/**************** REDIRECCIÓN A DAVEGALISOT ********************************/
+
+.volverPrincipal{
+    background-color: #000;
+}
+.volverPrincipal img{
+    width: 10px;
+    margin: 5px 10px;
+}
+.volverPrincipal a{
+    color: #fff;
+}
+.volverPrincipal a:hover{
+    text-decoration: none;
+}
+.flecha{
+    position: relative;
+    animation: animated_flecha 1s;
+    animation-iteration-count: 1;
+}
+@keyframes animated_flecha {
+    from {right: 0;}
+    to {right: 20px;}
+}
+
+/**********************************************************************************************************************
+NAV */
+
+li{
+    padding: 0 5px;
+}
+.encabezado {
+    font-weight: 600;
+}
+.navbar {
+    /*background-color: #ffae1b;*/
+    font-size: 1em;
+}
+.navbar-nav a {
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid black;
+    background: linear-gradient(90deg, #fff 50%, black 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+.navbar-nav a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #000000 50%, transparent 50%);
+    z-index: -1;
+}
+.navbar-nav a,
+.navbar-nav a:after {
+    background-size: 300%;
+    background-position: 100%;
+    transition: 1s;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a:hover:after {
+    background-position: 0;
+}
+
+.marginBot a{
+    margin-bottom: 10px;
+}
+
+/* Boton toTop on scroll */
+
+#myBtn {
+    display:  none;
+    position: fixed;
+    bottom:   20px;
+    right:    30px;
+    font-size: 4em;
+    color: #007BFF;
+}
+.m_left{
+    margin-left: 140px;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/****************************************************************************************************************** */
+
+.parrafo {
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.bienvenido {
+    max-height: 256px;
+}
+.tarjeta-pie {
+    background-color: #FFCCBC;
+}
+.border{
+    box-shadow: #8c8c8c 1px 1px 15px;
+}
+.enlance{
+    color: #000;
+    cursor: pointer;
+}
+.enlance:hover{
+    text-decoration: none;
+}
+.tituloNoticia{
+    color: #FFAE1B;
+}
+.descripcionNoticia{
+    font-size: 18px;
+    color: #000;
+}
+.imgPerfil{
+    width: 250px;
+    border-radius: 50%;
+}
+.img_index{
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* FOTOS PERFIL */
+
+.fotoPerfilDefecto{
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* BUTON */
+
+.btnCustom{
+    background-color: #007BFF;
+    color: #fff;
+}
+.btnCustom:hover{
+    text-decoration: none;
+    background-color: #0056B3;
+    color: #fff;
+}
+
+.nav-link {
+    padding: 8px 16px;
+    border-radius: 4px;
+
+}
+
+/**********************************************************************************************************************
+TEXTAREA */
+
+textarea{
+    resize: none;
+    width: 100%;
+}
+
+/**********************************************************************************************************************
+MENSAJES */
+
+.guardaEspacioMensajes{ /* guarda un espacio para evitar que los elementos se desplacen al aparecer el mensaje */
+    height: 80px;
+}
+
+/**********************************************************************************************************************
+TABLE */
+
+.forum{
+    font-size: 1em;
+}
+.topic{
+    width:500px;
+}
+.replies{
+    width: 150px;
+}
+.ultimo_recivido{
+    width: 200px;
+}
+.forum tr:first-child{
+    border-bottom: 0.5px solid #7d7d7d;
+}
+td{
+    padding: 10px 0;
+}
+.post{
+    width: 900px;
+}
+.tituloPost{
+    background: #ffae1b;
+}
+table *{
+    padding: 5px;
+}
+.marginTop{
+    margin-top: 40px;
+}
+.iconos i{
+    font-size: 3em;
+}
+.respuesta{
+    font-weight: bold;
+    font-size: 18px;
+}
+.respuestaPost{
+    transform: scale(0.95);
+}
+.no_padding{
+    padding: 0;
+}
+.lista_actividad tr:nth-child(odd){
+    background-color: #dededf;
+}
+th{
+    background-color: #ffae1b;
+}
+.btnDisabled{
+    background-color: #707070;
+}
+.btnDisabled:hover{
+    background-color: #707070;
+    cursor: default;
+}
+
+/* TABLA GAMETIME */
+
+.gametime td{
+    font-size: 0.8em;
+}
+.gametime th,
+.gametime td{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.gametime th:first-child,
+.gametime td:first-child{
+    padding-left: 10px;
+}
+.gametime th:last-child,
+.gametime td:last-child{
+    padding-right: 10px;
+}
+.centeredText th{
+    text-align: center;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+footer{
+    background-color: #ffae1b;
+    display: block;
+    margin: 150px 0 0 0;
+    padding: 40px 40px 20px 40px;
+    font-size: small;
+    cursor: default;
+    user-select: none;
+}
+footer>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+footer>div>div{
+    text-align: center;
+    display: block;
+}
+footer>div>div>p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer>div>div>p:last-child{
+    margin-top: 2px;
+}
+
+/*Pantallas grandes (desktops de menos de 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+/*Pantallas medianas (tablets de menos de 992px)*/
+@media (max-width: 991.98px) {
+
+}
+
+/*Pantallas pequeñas (móviles en landscape de menos de 768px)*/
+@media (max-width: 767.98px) {
+
+}
+
+/*Pantallas muy pequeñas (móviles en portrait de menos de 576px)*/
+@media (max-width: 575.98px) {
+
+}

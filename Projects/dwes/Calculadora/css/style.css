@@ -1,0 +1,140 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono');
+
+/**********************************************************************************************************************
+HTML, HEADER y BODY */
+
+html{
+    font-family: 'Roboto Mono', monospace;
+    background-color: #bfbfbf;
+    margin: 10px 0;
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+}
+
+/**********************************************************************************************************************
+HEADER */
+
+header{
+    background: #333 url("../img/headerBg.jpg") no-repeat;
+    padding: 5px 0;
+    color: #55affd;
+    text-align: center;
+}
+
+/**********************************************************************************************************************
+BODY */
+
+body{
+    width: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+    width: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+}
+.contenedor2{
+    display: block;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+.contenedor2 div:nth-child(3), .contenedor2 div:nth-child(4){
+    display: flex;
+    justify-content: center;
+}
+.contenedor2 div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.contenedor2 div:nth-child(4){
+    margin-top: 10px;
+}
+.inputNumber{
+    display: flex;
+    justify-content: space-around;
+}
+
+/**********************************************************************************************************************
+INPUT */
+
+input{
+    font-family: 'Roboto Mono', monospace;
+    text-align: right;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+input[type="number"]{
+    height: 40px;
+    width: 130px;
+    font-size: 25px;
+}
+input[type="text"]{
+    height: 40px;
+    border: inset;
+    width: 80%;
+    font-size: 25px;
+    padding: 2px;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    padding: 2px;
+}
+
+/**********************************************************************************************************************
+SELECT */
+
+select{
+    font-family: 'Roboto Mono', monospace;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+#reloj{
+    text-align: right;
+}
+footer{
+    font-family: 'Raleway', sans-serif;
+    background-color: #333;
+    color: #a5a5a5;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 40px 15px 40px;
+    font-size: 12px;
+    cursor: default;
+    user-select: none;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div p:last-child{
+    margin-top: 2px;
+}

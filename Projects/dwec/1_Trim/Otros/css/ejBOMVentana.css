@@ -1,0 +1,16 @@
+html{
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: white;
+    color: black;
+}
+input[type="button"]{
+    height: 25px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}

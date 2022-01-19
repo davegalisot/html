@@ -1,0 +1,277 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
+
+/**********************************************************************************************************************
+HTML, HEADER y BODY */
+
+html{
+    background-color: #bfbfbf;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+}
+body{
+    width: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+header{
+    background-color: #333;
+    padding: 5px 0 5px;
+    color: #55affd;
+    text-align: center;
+}
+header img{
+    margin: 10px auto;
+    width: 220px;
+}
+header>div>button{
+    background: url("../img/listadoPersonajes.png") no-repeat;
+    background-size: 220px;
+    border: 0;
+    width: 220px;
+    height: 80px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+body>form>div{
+    padding: 20px;
+}
+
+/**********************************************************************************************************************
+TABLE */
+
+.scroll{
+    margin: auto;
+    border-collapse: collapse;
+    padding: 45px 10px;
+    user-select: none;
+    width: 90%;
+}
+.scroll tr:nth-child(odd){
+    background: #d8d8d8;
+}
+.scroll th{
+    font-family: 'Bitter', serif;
+    font-size: 1em;
+    font-weight: normal;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.ordenador{
+    border: 0;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+.scroll td{
+    padding: 5px 20px;
+    margin: 0;
+}
+.scroll td:nth-child(4){
+    text-align: center;
+}
+.scroll td p{
+    margin: 0;
+    max-width: 250px;
+    cursor: default;
+}
+form button{
+    margin-left: 5px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #919191;
+    border-radius: 5px;
+}
+.foto{
+    width: 45px;
+    border-radius: 5px;
+}
+.scroll tr:hover{
+    background-color: #b6b6b6;
+    color: white;
+}
+.scroll tr td div{
+    display: flex;
+}
+
+/**********************************************************************************************************************
+FORM */
+
+form .nuevaVentana{
+    background: #eeeeee url("../img/edit.svg") 11px 3px no-repeat;
+    background-size: 25px;
+}
+form .borrar{
+    background: #eeeeee url("../img/trash.svg") 15px 3px no-repeat;
+    background-size: 19px;
+}
+form .imdb{
+    margin-top: 1px;
+    border: 0;
+    background: url("../img/imdb.svg") -13.6px -7px no-repeat;
+    background-size: 75px;
+}
+
+/**********************************************************************************************************************
+LISTAPERSONAJEVISTA.PHP */
+
+body div h1{
+    font-family: 'Bitter', serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+body .divVolver a, .divVolver input{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    border: 0;
+    margin-right: 10px;
+    background: #333;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+body .divVolver div{
+    display: flex;
+    justify-content: center;
+}
+body .divVolver div:first-child{
+    padding: 0 75px 0 0;
+}
+body .divVolver div:last-child{
+    margin-top: 20px;
+}
+body .divVolver div:first-child p{
+    font-family: 'Bitter', serif;
+    margin: 5px 4px 0 0;
+}
+.tablaDetalle{
+    margin: auto;
+    background: white;
+}
+.tablaDetalle input, .tablaDetalle select{
+    font-family: "Arial", serif;
+    font-size: 13px;
+    font-style: italic;
+    height: 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding-left: 5px;
+}
+.tablaDetalle input{
+    width: 180px;
+}
+.tablaDetalle select, select{
+    max-width:187px;
+    height: 24px;
+}
+.tablaDetalle p{
+    font-family: 'Bitter', serif;
+    font-size: 14px;
+    max-width: 300px;
+}
+.tablaDetalle td{
+    padding: 5px 5px;
+}
+.tablaDetalle td:nth-child(odd){
+    text-align: right;
+}
+.tablaDetalle td:nth-child(even){
+    width: 200px;
+}
+.tablaDetalle p:first-child, .tablaDetalle input:first-child, .tablaDetalle select:first-child{
+    margin-bottom: 8px;
+}
+.tablaDetalle p:first-child{
+    margin-bottom: 16px;
+}
+.tablaDetalle tr:first-child p:last-child{
+    margin-top: 8px;
+}
+.tablaDetalle td:nth-child(4){
+    text-align: left;
+}
+.divVolver{
+    margin-top: 20px;
+}
+.bandera{
+    width: 20px;
+    height: 12px;
+    border-radius: 0;
+}
+.tablaDetalle .year{
+    width:60px;
+}
+.selectorFotoDir{
+    padding-right: 200px;
+}
+.selectorFotoDir select{
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+.selectorFotoDir p{
+    padding: 0;
+    margin-right: 5px;
+    font-family: 'Bitter', serif;
+    font-size: 14px;
+}
+form .guardar{
+    background: #eeeeee url("../img/save.svg") 13px 2px no-repeat;
+    background-size: 22px;
+    margin-right: 10px;
+}
+form .volver{
+    background: #eeeeee url("../img/return.svg") 14px 3px no-repeat;
+    background-size: 22px;
+}
+
+form .user{
+    background: #eeeeee url("../img/save.svg") 14px 3px no-repeat;
+    background-size: 22px;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+footer{
+    font-family: 'Raleway', sans-serif;
+    background-color: #333;
+    color: #a5a5a5;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 40px 15px 40px;
+    font-size: 12px;
+    cursor: default;
+    user-select: none;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div>p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div>p:last-child{
+    margin-top: 2px;
+}
+#reloj{
+    text-align: right;
+}

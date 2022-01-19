@@ -1,0 +1,114 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono');
+
+/**********************************************************************************************************************
+HTML */
+
+html{
+    background-color: #bfbfbf;
+    font-family: Arial, sans-serif;
+}
+
+/**********************************************************************************************************************
+BODY */
+body{
+    width: 1000px;
+    background-color: #ffffff;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+
+/**********************************************************************************************************************
+HEADER */
+
+header{
+    background-color: black;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    color: #55affd;
+    width: 100%;
+}
+
+/**********************************************************************************************************************
+CANVAS */
+
+#myCanvas{
+    border: inset;
+}
+.canvas{
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+.canvas div{
+    display: inline-block;
+}
+.canvas p{
+    text-align: right;
+    margin: 0;
+    padding: 5px;
+    font-style: italic;
+    color: #8c8c8c;
+}
+
+/**********************************************************************************************************************
+INPUT */
+
+input[type="button"]{
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #333;
+    padding: 4px 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/**********************************************************************************************************************
+CLASES */
+
+.reload{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.stats{
+    display: inline-block;
+    text-align: center;
+}
+.stats td:first-child{
+    text-align: right;
+}
+.stats p{
+    margin: 0;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+footer{
+    background-color: #333;
+    color: #8c8c8c;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 40px 5px 40px;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    font-family: Calibri, sans-serif;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div>p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div>p:last-child{
+    margin-top: 2px;
+}

@@ -1,0 +1,207 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                              Autores: David y Rubén
+***********************************************************************************************************************/
+
+/* COMUN PARA LAS DOS PARTES (FRONT & BACK) */
+
+/**********************************************************************************************************************
+HTML */
+
+html{
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+/**********************************************************************************************************************
+BODY */
+
+body{
+    background-color: #ECEFF1;
+    font-family: 'Titillium Web', sans-serif;
+    color: #263238;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+.wrapper{
+    height:auto !important;
+    min-height:100%;
+}
+
+/**********************************************************************************************************************
+HEADER */
+
+header{
+    padding: 0 0 15px 0;
+    text-align: center;
+    background-color: #FF5722;
+}
+.titulo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    padding-top: 25px;
+}
+
+.titulo a {
+    color: #FBE9E7;
+    text-decoration: unset;
+}
+.volverPrincipal{
+    background-color: #000;
+}
+.volverPrincipal img{
+    width: 10px;
+    margin: 5px 10px;
+}
+.volverPrincipal a{
+    color: #fff;
+}
+.volverPrincipal a:hover{
+    text-decoration: none;
+}
+.flecha{
+    position: relative;
+    animation: animated_flecha 1s;
+    animation-iteration-count: 1;
+}
+@keyframes animated_flecha {
+    from {right: 0;}
+    to {right: 20px;}
+}
+
+/**********************************************************************************************************************
+NAV */
+
+li{
+    padding: 0 5px;
+}
+.encabezado {
+    font-weight: 600;
+}
+.navbar {
+    background-color: #455A64;
+    font-size: large;
+    z-index: 1;
+}
+
+.navbar-nav a {
+    color: #CFD8DC;
+    text-align: center;
+}
+
+.navbar-nav a:hover {
+    color: #90A4AE;
+}
+ /* EFECTO ON SCROLLDOWN */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+.smaller{
+    height: 40px;
+    padding-bottom: 10px;
+}
+.smaller a{
+    font-size: 14px;
+}
+
+/* Boton toTop on scroll */
+
+#myBtn {
+    display:  none;
+    position: fixed;
+    bottom:   20px;
+    right:    30px;
+    font-size: 4em;
+    color: #FF5722;
+}
+
+/****************************************************************************************************************** */
+.subencabezado {
+    font-weight: 300;
+}
+
+.parrafo {
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bienvenido {
+    max-height: 256px;
+}
+
+.tarjeta-pie {
+    background-color: #FFCCBC;
+
+}
+
+/**********************************************************************************************************************
+MENSAJES */
+
+.guardaEspacioMensajes{ /* guarda un espacio para evitar que los elementos se desplacen al aparecer el mensaje */
+    height: 70px;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+footer{
+    background-color: #435A63;
+    color: #fff;
+    display: block;
+    margin: 150px 0 0 0;
+    padding: 40px 40px 20px 40px;
+    font-size: small;
+    cursor: default;
+    user-select: none;
+}
+
+footer>div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+footer>div>div{
+    text-align: center;
+    display: block;
+}
+footer>div>div>p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer>div>div>p:last-child{
+    margin-top: 2px;
+}
+
+.trastienda a{
+    color: #fff;
+}
+
+.trastienda a:hover{
+    color: #90A4AE;
+}
+
+/* ANIMATIONS */
+
+@keyframes cogwheel {
+    0% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.cogwheel{
+    animation: 1s ease-out cogwheel;
+}

@@ -1,0 +1,73 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0048)file://C:\Users\Nacho\AppData\Local\Temp\P5.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- saved from url=(0056)file:///C:/Users/Nacho/AppData/Local/Temp/Practica5.html --><HTML
+        xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000"
+                                                         http-equiv="X-UA-Compatible">
+
+    <META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <TITLE>Práctica 5- Iniciación a DOM</TITLE>
+    <SCRIPT type="text/javascript">
+        window.onload = function() {
+            var contador = 0;
+            for (var i = 0; i < document.getElementsByTagName("a").length; i++)
+                if (document.getElementsByTagName("a")[i].href == "http://prueba/") contador++;
+            // Numero de enlaces de la pagina
+            document.getElementById("salida").innerHTML = "El número de enlaces de la página son " +
+            document.getElementsByTagName("a").length + ",<br/>" +
+            // Direccion a la que apunta el primer enlace
+            "la dirección del primer enlace es: \"" + document.getElementsByTagName("a")[0].href + "\",<br/>" +
+                // Numero de enlaces del tercer párrafo
+            "el número de enlaces del tercer párrafo son: " +
+            document.getElementsByTagName("p").length + ",<br/>" +
+            "la dirección del penúltimo enlace es: \"" +
+                document.getElementsByTagName("a")[document.getElementsByTagName("a").length-1].href + "\"<br/>" +
+            "y el número de enlaces que enlazan a \"http://prueba/\" son: " + contador;
+
+        }
+    </SCRIPT>
+
+    <META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>
+<BODY>
+    <P>Lorem ipsum dolor sit amet, <A href="http://prueba/">consectetuer adipiscing
+        elit</A>. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu,
+        consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc,
+        posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id,
+        aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit
+        convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non,
+        mi. <A href="http://prueba2/">Fusce porta</A>. Duis pellentesque, felis eu
+        adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non
+        dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis
+        scelerisque. Donec lacus neque, vehicula in, eleifend vitae, venenatis ac,
+        felis. Donec arcu. Nam sed tortor nec ipsum aliquam ullamcorper. Duis accumsan
+        metus eu urna. Aenean vitae enim. Integer lacus. Vestibulum venenatis erat eu
+        odio. Praesent id metus.
+    </P>
+    <P>Aenean at nisl. Maecenas egestas dapibus odio. Vestibulum ante ipsum primis
+        in faucibus orci luctus et ultrices posuere cubilia Curae; Proin consequat
+        auctor diam. <A href="http://prueba/">Ut bibendum blandit est</A>. Curabitur
+        vestibulum. Nunc malesuada porttitor sapien. Aenean a lacus et metus venenatis
+        porta. Suspendisse cursus, sem non dapibus tincidunt, lorem magna porttitor
+        felis, id sodales dolor dolor sed urna. Sed rutrum nulla vitae tellus. Sed quis
+        eros nec lectus tempor lacinia. Aliquam nec lectus nec neque aliquet dictum.
+        Etiam <A href="http://prueba3/">consequat sem quis massa</A>. Donec aliquam
+        euismod diam. In magna massa, mattis id, pellentesque sit amet, porta sit amet,
+        lectus. Curabitur posuere. Aliquam in elit. Fusce condimentum, arcu in
+        scelerisque lobortis, ante arcu scelerisque mi, at cursus mi risus sed
+        tellus.
+    </P>
+    <P>Donec sagittis, nibh nec ullamcorper tristique, pede velit feugiat massa, at
+        sollicitudin justo tellus vitae justo. Vestibulum aliquet, nulla sit amet
+        imperdiet suscipit, nunc erat laoreet est, a <A href="http://prueba/">aliquam
+            leo odio sed sem</A>. Quisque eget eros vehicula diam euismod tristique. Ut dui.
+        Donec in metus sed risus laoreet sollicitudin. Proin et nisi non arcu sodales
+        hendrerit. In sem. Cras id augue eu lorem dictum interdum. Donec pretium. Proin
+        <A href="http://prueba4/">egestas</A> adipiscing ligula. Duis iaculis laoreet
+        turpis. Mauris mollis est sit amet diam. Curabitur hendrerit, eros quis
+        malesuada tristique, ipsum odio euismod tortor, a vestibulum nisl mi at odio. <A
+                href="http://prueba5/">Sed non lectus non est pellentesque</A>
+        auctor.
+    </P>
+    <div id="salida"></div>
+</BODY>
+</HTML>

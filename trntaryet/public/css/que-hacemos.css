@@ -1,0 +1,186 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                                  Autor: DaVeGaLiSoT
+***********************************************************************************************************************/
+/***********************************************************************************************************************/
+/* CSS COMUN PARA LAS PAGINAS QUE HACEMOS */
+/***********************************************************************************************************************/
+
+/**********************************************************************************************************************
+ARTICLE (COMÚN PARA TODOS LOS **QUÉ HACEMOS**) */
+
+.section-que-hacemos .row h1,
+.fondo-integracion-infraestructura h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "Raleway bold italic", sans-serif;
+}
+.section-que-hacemos p,
+.section-que-hacemos li{
+    color: var(--color-parrafos);
+    text-align: justify;
+}
+.section-que-hacemos .row  p:first-of-type{
+    margin-top: 40px;
+}
+.section-que-hacemos .main-texto p:first-of-type{
+    margin-top: 30px;
+}
+ul{
+    list-style: none;
+}
+.section-que-hacemos ul li,
+.trn-taryet-cookies-y-legal ul li{
+    list-style-image: url("../img/iconos/check-solid.svg");
+}
+.section-que-hacemos ul li::before,
+.trn-taryet-cookies-y-legal ul li:before{
+    content: "";
+    color: var(--corporate-blue);
+    display: inline-block;
+}
+.img-que-hacemos{
+    height: 400px;
+    background: url("../img/fotos/img-logistica-bc.jpg") 50% 50% no-repeat fixed;
+    background-size: cover;
+}
+.div-cualidades-que-hacemos{
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.div-cualidades-que-hacemos p{
+    color: white;
+    font-family: Raleway, sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.div-cualidades-que-hacemos div p:first-of-type{
+    padding-top: 25px;
+    margin-bottom: -5px;
+}
+.div-cualidades-que-hacemos i{
+    font-size: 60px;
+    color: white;
+}
+.qh-img{
+    position: sticky;
+    top: 60px;
+    width: 100%;
+}
+
+/***********************************************************************************************************************/
+/* MOVILIDAD */
+/***********************************************************************************************************************/
+
+.section-movilidad .row .col-8{
+    padding-left: 40px;
+}
+
+/***********************************************************************************************************************/
+/* LOGISTICA */
+/***********************************************************************************************************************/
+
+.section-logistica .row .col-8{
+    padding: 0 0 0 40px;
+}
+.section-logistica .row .col-4{
+    padding: 8px 0 0 0;
+}
+
+/***********************************************************************************************************************/
+/* INFRAESTRUCTURA */
+/***********************************************************************************************************************/
+
+.section-infraestructura .row p{
+    color: var(--color-parrafos);
+}
+.section-infraestructura .row .col-8{
+    padding: 0;
+}
+.section-infraestructura article:nth-child(2) .row .col-8{
+    padding: 0 0 0 40px;
+}
+.section-infraestructura article:nth-child(3){
+    margin-top: 80px;
+}
+.section-infraestructura article:nth-child(3) .row .col-8,
+.section-infraestructura article:nth-child(7) .row .col-8{
+    padding: 0 40px 0 0;
+}
+.section-infraestructura article:nth-child(5) .row .col-8{
+    padding: 0 0 0 40px;
+}
+.section-infraestructura article:nth-child(6) .row .col-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.section-infraestructura article:nth-child(7) .row img{
+    height: 360px;
+    object-position: 60% 10%;
+}
+.section-infraestructura .row .col-4{
+    padding-right: 0;
+}
+.fondo-integracion-infraestructura,
+.section-infraestructura article:nth-child(6){
+    margin: 60px 0;
+    padding: 40px 0;
+    background-color: var(--fondo-slider);
+}
+
+.img-metro{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.barra-blanca{
+    background-color: white;
+    height: 100%;
+    width: 5px;
+}
+
+/***********************************************************************************************************************/
+/* ANÁLISIS */
+/***********************************************************************************************************************/
+
+.section-analisis .row .col-8{
+    padding: 0 0 0 40px;
+}
+.section-analisis .row .col-4{
+    padding: 0;
+}
+.section-analisis .main-texto h3{
+    font-style: italic;
+    text-align: right;
+    margin: 20px 0 0 0;
+}
+.section-analisis .main-texto p{
+    margin: 10px 0 0 0;
+}
+.section-analisis .main-texto p:first-of-type{
+    margin: 10px 0 0 0;
+}
+
+/***********************************************************************************************************************/
+/* CONSULTORÍA */
+/***********************************************************************************************************************/
+
+.section-consultoria .row .col-8{
+    padding: 0 0 0 40px;
+}
+.section-consultoria .row .col-4{
+    padding: 0;
+}
+.section-consultoria .main-texto h3{
+    font-style: italic;
+    text-align: right;
+    margin: 20px 0 0 0;
+}
+.section-consultoria .main-texto p{
+    margin: 10px 0 0 0;
+}
+.section-consultoria .main-texto p:first-of-type{
+    margin: 10px 0 0 0;
+}

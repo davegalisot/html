@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+    <meta name="title" content="Javascript">
+    <meta name="description" content="Javascript">
+    <meta name="keywords" content="HTML5, CSS, Javascript">
+    <link rel="stylesheet" type="text/css" href="css/juegoBola.css">
+    <script type="text/javascript" src="js/juegoBola.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Juego de Bola</h1>
+    </header>
+    <div class="reload">
+        <input type="button" value="Recargar juego" onclick="location.reload()">
+    </div>
+    <div class="canvas">
+        <div>
+            <canvas id="myCanvas" width="680" height="512"></canvas>
+            <p>canvas</p>
+        </div>
+    </div>
+    <table class="stats">
+        <tr>
+            <td>X:</td>
+            <td><input id="mostrarX" type="text" readonly></td>
+        </tr>
+        <tr>
+            <td>Y:</td>
+            <td><input id="mostrarY" type="text" readonly></td>
+        </tr>
+        <tr>
+            <td>Velocidad X:</td>
+            <td><input id="mostrarDX" type="text" readonly></td>
+        </tr>
+        <tr>
+            <td>Velocidad Y:</td>
+            <td><input id="mostrarDY" type="text" readonly></td>
+        </tr>
+    </table>
+    <footer>
+        <div>
+            <div>
+                <p>Grado</p>
+                <p>Desarrollo de aplicaciones WEB</p>
+            </div>
+            <div>
+                <p>Clase</p>
+                <p>Desarrollo WEB Entorno Cliente</p>
+            </div>
+            <div>
+                <p>Profesor</p>
+                <p>Nacho Barnes</p>
+            </div>
+            <div>
+                <p>Autor</p>
+                <p>David Galiana Sotillo</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

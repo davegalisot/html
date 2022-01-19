@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Generador de Menu</title>
+    <meta name="title" content="Ejercicio Generador de Menu">
+    <meta name="description" content="Ejercicio Generador de Menu">
+    <meta name="keywords" content="HTML5, CSS, Javascript">
+    <link rel="stylesheet" type="text/css" href="css/ejGeneradorMenu.css">
+    <script type="text/javascript" src="js/ejGeneradorMenu.js"></script>
+</head>
+    <body>
+        <header>
+            <h1>Ejercicio Generador de Menu</h1>
+        </header>
+
+        <form action="ejGeneradorMenu.html" method="post">
+            <div>
+                <div>
+                    <p>Selecciona el número de items del menú:</p>
+                    <select id="numeroItems"></select>
+                </div>
+                <div>
+                    <p>Selecciona el tipo de distribución:</p>
+                    <input type="radio" name="distribucion" value="horizontal" checked/>horizontal
+                    <input type="radio" name="distribucion" value="veritcal"/>vertical
+                </div>
+                <div>
+                    <p>Selecciona el tipo de estilo:</p>
+                    <select id="estilo">
+                        <option value="profesional">Profesional</option>
+                        <option value="particular">Particular</option>
+                        <option value="creativa">Creativa</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <input id="generarMenu" type="button" value="Generar Menú">
+            </div>
+        </form>
+
+        <footer>
+            <div>
+                <div>
+                    <p>Grado</p>
+                    <p>Desarrollo de aplicaciones WEB</p>
+                </div>
+                <div>
+                    <p>Clase</p>
+                    <p>Desarrollo WEB Entorno Cliente</p>
+                </div>
+                <div>
+                    <p>Profesor</p>
+                    <p>Nacho Barnes</p>
+                </div>
+                <div>
+                    <p>Autor</p>
+                    <p>David Galiana Sotillo</p>
+                </div>
+            </div>
+    </footer>
+    </body>
+</html>

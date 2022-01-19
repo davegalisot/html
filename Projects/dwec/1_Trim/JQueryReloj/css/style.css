@@ -1,0 +1,189 @@
+/**********************************************************************************************************************
+Hoja de estilos CSS                                                                       Autor: David Galiana Sotillo
+***********************************************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:700');
+
+*{
+    font-family: 'Source Code Pro', monospace;
+}
+
+/**********************************************************************************************************************
+HTML, HEADER y BODY */
+
+html{
+    background-color: #bfbfbf;
+    margin: 10px 0;
+    font-size: 0.9em;
+    letter-spacing: 0.3px;
+}
+
+/**********************************************************************************************************************
+HEADER */
+
+header{
+    background: #333;
+    color: #55affd;
+    padding: 5px 0;
+    text-align: center;
+}
+
+/**********************************************************************************************************************
+BODY */
+
+body{
+    max-width: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 5px 0px  5px #8c8c8c, -5px 0px  5px #8c8c8c;
+}
+#div{
+    display: flex;
+    justify-content: center;
+}
+#botonera{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0 0;
+
+}
+
+/**********************************************************************************************************************
+INPUT */
+
+input[type="button"]{
+    margin: 1px 0;
+    padding: 10px;
+    font-size: 1em;
+    width: 160px;
+    height: 50px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+#display{
+    margin: 20px 0 0 0;
+    font-size: 4em;
+    text-align: center;
+    width: 320px;
+    border: 1px solid #333;
+    display: flex;
+    justify-content: center;
+}
+#horas,
+#minutos,
+#segundos{
+    width: 75px;
+    height: 75px;
+    font-size: 1em;
+    border: 0;
+    outline: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/**********************************************************************************************************************
+DIV BOTONES */
+
+#contReloj,
+#contCrono,
+#contCA{
+    width: 160px;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+}
+#cronoPlay,
+#CAPlay,
+#cronoPause,
+#CAPause,
+#cronoRestart,
+#CARestart{
+    margin: 0 2px;
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+#cronoPlay,
+#CAPlay{
+    background: #dddddd url("../img/play.svg") 50% 50% no-repeat;
+    background-size: 30px;
+}
+#cronoPause,
+#CAPause{
+    background: #dddddd url("../img/pause.svg") 50% 50% no-repeat;
+    background-size: 30px;
+}
+#cronoRestart,
+#CARestart{
+    background: #dddddd url("../img/restart.svg") 50% 50% no-repeat;
+    background-size: 30px;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+
+#reloj{
+    text-align: right;
+}
+footer{
+    font-family: 'Raleway', sans-serif;
+    background-color: #333;
+    color: #a5a5a5;
+    display: block;
+    margin: 20px 0 0 0;
+    padding: 30px 40px 15px 40px;
+    font-size: 11px;
+    cursor: default;
+    user-select: none;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+footer div div{
+    text-align: center;
+    display: block;
+}
+footer div p:first-child{
+    margin-bottom: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid #444444;
+}
+footer div p:last-child{
+    margin-top: 2px;
+}
+
+/**********************************************************************************************************************
+***********************************************************************************************************************
+MEDIA QUERIES
+***********************************************************************************************************************
+***********************************************************************************************************************/
+
+/* Pantallas grandes (desktops de menos de 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* Pantallas medianas (tablets de menos de 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
+@media (max-width: 767.98px) {
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        margin-left: 200px;
+    }
+}
+
+/* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+@media (max-width: 575.98px) {
+
+}

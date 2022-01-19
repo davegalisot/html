@@ -1,0 +1,571 @@
+@charset "UTF-8";
+
+/*** import de fuente/s google fonts ***/
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap');
+
+/*** variables ***/
+:root{ /* tema claro */
+    --corporate-red: #A91B3E;
+    --corporate-blue: #1B5487;
+    --fondo-slider: #d4d4d4;
+    --main-bgcolor: white;
+    --color-titulo: black;
+    --color-button: black;
+    --color-parrafos: #555454;
+    --fondo-corporate-red-o30: rgba(169, 27, 62, 0.31);
+    --fondo-corporate-blue-o30: rgba(27, 84, 135, 0.3);
+    --color-borde-encuesta: #e5e5e5;
+
+}
+
+@font-face {
+    font-family: "bahnschrift";
+    src: url(../fonts/bahnschrift.ttf);
+}
+
+@font-face {
+    font-family: "PantonItalicCaps";
+    src: url(../fonts/Panton-BlackitalicCaps.otf);
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Raleway bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Raleway bold italic";
+    src: url(../fonts/Raleway-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: "Raleway ExtraBold";
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "Raleway light";
+    src: url(../fonts/Raleway-Light.ttf);
+}
+
+/**********************************************************************************************************************
+MODIFICADO PARA TODOS LOS ELEMENTOS DE LA WEB */
+.width1500px{
+    max-width: 1460px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.width1350px{
+    max-width: 1310px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+p{
+    font-family: "PantonItalicCaps", sans-serif;
+}
+/* titulos h1 */
+.color-titulo{
+    color: var(--color-titulo);
+    /*text-align: left;*/
+}
+/* separador titulos h1 */
+.separa_h1p{
+    height: 2px;
+    width: 30px;
+    background-color: var(--color-titulo);
+    margin: -5px 0 5px 0;
+}
+
+/**********************************************************************************************************************
+SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #a6a6a6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--corporate-blue);
+    transition: all 0.4s 0s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #142f55;
+}
+
+/**********************************************************************************************************************
+HTML */
+html{
+    overflow-x: hidden;
+}
+
+/**********************************************************************************************************************
+BODY */
+body{
+    display: table;
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--main-bgcolor);
+}
+
+/**********************************************************************************************************************
+HEADER */
+header{
+    /*position: fixed;*/
+    width: 100%;
+    height: 100px;
+    font-family: Roboto, sans-serif;
+    background-color: var(--corporate-red);
+    z-index: 5;
+    transition: all 0.5s 0s;
+}
+header.csatis-trn{
+    background-color: white;
+}
+header .centered_vertically{
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width: 160px;
+    transition: all 0.5s 0s;
+}
+header #logo{
+    padding: 10px 0 0 0;
+    transition: all 0.5s 0s;
+    z-index: 5;
+}
+
+/**********************************************************************************************************************
+IMG FONDO Y TEXTO BLANCO */
+.blanco-tapa-h1{
+    background-color: var(--main-bgcolor);
+    width: 100%;
+    height: 10px;
+    position: relative;
+    top: 96px;
+    z-index: 5;
+}
+.article-titulo{
+    margin-bottom: 120px;
+    width: 100%;
+}
+.foto-titulo{
+    height: 250px;
+    background: url("../img/fotos/img-fondo-grey-bc.jpg") 50% 50% no-repeat fixed;
+    background-size: cover;
+    z-index: 0;
+}
+.foto-titulo h1{
+    color: var(--main-bgcolor);
+    position: relative;
+    top: 142px;
+    width: 100%;
+    font-family: "Raleway ExtraBold", sans-serif;
+    font-size: 120px;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+/**********************************************************************************************************************
+ENCUESTA */
+.article-satis{
+    flex-wrap: wrap;
+}
+.section-satis{
+    margin: 0 auto 100px auto;
+}
+.section-satis p{
+    margin: 0;
+    text-transform: uppercase;
+    color: var(--color-parrafos);
+}
+.estudio{
+    margin-top: 40px;
+}
+.div-conjunto{
+    margin-top: 20px;
+}
+.bloque{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.mi-borde-radio{
+    color: black;
+    border: solid 3px var(--color-borde-encuesta);
+    border-radius: 20px;
+    margin: 0 10px;
+    padding: 2px 8px;
+    min-width: 480px;
+}
+.mi-bloque-radio{
+    padding: 0 6px 25px 6px;
+    margin: 6px 0 6px 10px;
+    border-radius: 20px;
+    border: 4px solid;
+    border-color: var(--color-borde-encuesta);
+    background-color: var(--color-borde-encuesta);
+}
+.fondo-gris{
+    background-color: var(--color-borde-encuesta);
+}
+.linea_separadora{
+    height: 2px;
+    background-color: white;
+}
+.nuevo_radio{
+    border-bottom-right-radius: 15px;
+}
+textarea{
+    font-family: "PantonItalicCaps", sans-serif;
+}
+textarea::placeholder{
+    font-family: "PantonItalicCaps", sans-serif;
+    color: #b3b3b3;
+    text-transform: uppercase;
+}
+textarea::-webkit-resizer{
+}
+.texto-izq-encuesta{
+    font-size: 13px;
+}
+.carita{
+    margin: 0 10px;
+    width: 35px;
+}
+.estudio{
+    display: flex;
+    justify-content: flex-start;
+}
+.estudio textarea{
+    background: url(../../public/img/csatis/dragable-diagonal-lines.png)no-repeat 99.4% 85%;
+    background-size: 14px;
+    resize: horizontal;
+    overflow: hidden;
+    width: 450px;
+    max-width: 900px;
+}
+.observaciones{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.div-comentarios{
+    min-width: 102%;
+}
+.div-comentarios textarea{
+    /*margin: 0 auto;*/
+    background: url(../../public/img/csatis/dragable-diagonal-lines.png)no-repeat 99.8% 96%;
+    background-size: 18px;
+    overflow: hidden;
+    min-width: 97%;
+    border: solid 3px var(--color-borde-encuesta);
+    resize: vertical;
+}
+textarea:focus, input:focus{
+    outline: 0;
+    border: solid 3px var(--corporate-blue);
+}
+.sobretexto{
+    text-align: right;
+    padding-right: 30px;
+    font-size: small;
+}
+.div-texto p{
+    font-size: 12px;
+    text-align: right;
+}
+.gracias{
+    margin: auto 0;
+    height: 22px;
+    padding: 0 20px 0 0;
+}
+.div-enviar{
+    margin: 30px 20px 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.div-gracias{
+    margin-top: 14px;
+}
+#enviar{
+    font-family: "PantonItalicCaps", sans-serif;
+    padding: 10px 50px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+#enviar:hover{
+    background-color: var(--corporate-blue);
+    color: white;
+    transition: 0.4s;
+}
+p.verde{
+    color: #1e911e;
+}
+p.rojo{
+    color: #ff3c3c;
+}
+
+/* RADIO BUTTON STYLE http://stackoverflow.com/a/17541916/383904 */
+.rad p{
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+.rad{
+    height: 0px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+.rad > input{ /* HIDE ORG RADIO & CHECKBOX */
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* RADIO & CHECKBOX STYLES */
+/* DEFAULT <i> STYLE */
+.rad > i{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: 0;
+    margin: 0 5px;
+    width:  36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: 0.2s;
+    box-shadow: inset 0 0 0 12px #fff;
+    border: 1px solid gray;
+    background: #a0a0a0;
+}
+.rad:hover > i{ /* HOVER <i> STYLE */
+    box-shadow: inset 0 0 0 3px #fff;
+    background: gray;
+}
+.rad > input:checked + i{ /* (RADIO CHECKED) <i> STYLE */
+    box-shadow: inset 0 0 0 3px #fff;
+    background: var(--corporate-blue);
+}
+
+/**********************************************************************************************************************
+REGISTRO ENCUESTAS */
+
+#registro_encuesta{
+    font-family: "Raleway bold", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#registro_encuesta td, #registro_encuesta th{
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 12px;
+}
+#registro_encuesta tr:nth-child(even){
+    background-color: rgba(27, 84, 135, 0.3);
+}
+#registro_encuesta tr:hover{
+    background-color: var(--corporate-blue);
+    color: white;
+}
+#registro_encuesta th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 11px;
+    text-align: center;
+    background-color: var(--corporate-red);
+    color: white;
+    user-select: none;
+    max-width: 100px;
+}
+#registro_encuesta th{
+    position: sticky;
+    top: -2px;
+}
+#registro_encuesta th>p{
+    color: white;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.3px;
+}
+.comentario-tabla{
+    max-width: 300px;
+}
+.trabajo-tabla{
+    max-width: 300px;
+}
+
+/* BUSQUEDA */
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.mi-search{
+    border: 4px solid #c8c8c8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 5px;
+}
+.todos-datos{
+    justify-content: flex-end;
+}
+.p-registro{
+    display: inline;
+}
+.button-corp{
+    font-family: "PantonItalicCaps", sans-serif;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.select{
+    background-color: #c8c8c8;
+}
+
+/**********************************************************************************************************************
+ERRORES */
+
+.val_trabajo{
+    opacity: 1;
+    padding-left: 10px;
+}
+.borde_rojo{
+    border-color: #e73737;
+}
+
+/**********************************************************************************************************************
+GRACIAS.PHP */
+
+.section-gracias{
+    margin: 80px 0 160px 0;
+}
+.gracias-colab{
+    font-family: "PantonItalicCaps", sans-serif;
+    font-size: 50px;
+    color: #3fb83f;
+}
+
+/**********************************************************************************************************************
+FOOTER */
+footer{
+    background-color: var(--corporate-blue);
+    text-align: justify;
+    color: white;
+    font-size: 1em;
+    margin: 0;
+    padding: 40px 0 60px 0;
+    cursor: default;
+}
+footer p{
+    color: white;
+}
+footer a{
+    color: white;
+    font-size: 16px;
+    margin: 5px 0;
+    text-decoration: none;
+}
+footer a:hover{
+    color: white;
+}
+footer h4{
+    font-family: "PantonItalicCaps", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+footer p,
+footer a{
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 5px 0;
+    font-size: 16px;
+}
+footer .footer-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+footer .footer-info{
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-isos{
+    display: flex;
+    flex-direction: column;
+}
+footer .footer-isos a{
+    margin: 20px 0 0 0;
+}
+footer .footer-sobre{
+    width: 25%;
+}
+footer .rrss-logos{
+    display: flex;
+    flex-direction: column;
+}
+footer .rrss-logos img{
+    width: 40px;
+}
+footer img.isos{
+    width: 200px;
+}
+
+/* oculto para mediaQuery-576 */
+footer .footer-mQ-576 *{
+    display: none;
+}
+
+
+/*!***********************************************************************************************************************/
+/*MEDIA QUERIES MENU *!*/
+/*Pantallas grandes (desktops de mas de 1600px)*/
+@media (min-width: 1599.99px) {
+
+}
+
+/*Pantallas grandes (desktops de menos de 1200px)*/
+@media (max-width: 1199.98px) {
+
+}
+
+/*Pantallas medianas (tablets de menos de 992px)*/
+@media (max-width: 991.98px) {
+    #navbar{
+        display: none;
+    }
+}
+
+/*Pantallas pequeñas (móviles en landscape de menos de 768px)*/
+@media (max-width: 767.98px) {
+
+}
+
+/*Pantallas muy pequeñas (móviles en portrait de menos de 576px)*/
+@media (max-width: 575.98px) {
+
+}
+@media (min-width: 991.98px) {
+    #navbar-movil{
+        display: none;
+    }
+}

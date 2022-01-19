@@ -1,0 +1,88 @@
+html{
+    background-color: #ffffff;
+    font-family: Arial;
+}
+body{
+    width: 1500px;
+}
+body>div{
+    display: flex;
+    justify-content: center;
+}
+body>div>div{
+    display: block;
+    width: 1000px;
+}
+header{
+    background-color: #eff0f0;
+    border-top: 1px solid #c4c5c5;
+    border-bottom: 1px solid #dcdddd;
+}
+header>div{
+    display: flex;
+    justify-content: space-between;
+}
+header>div>div{
+
+    padding: 8px 5px 8px 5px;
+    display: flex;
+}
+header>div>div>p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+header img{
+    width: 15px;
+    height: 12px;
+    margin: 0 3px 0 0;
+}
+h1{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 32px;
+    color: #5c5452;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 50px;
+}
+aside{
+    background-color: #d5e9f1;
+    padding: 3px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.section1{
+    background-color: #fff0d0;
+    margin: 10px 0 0 0;
+}
+.section1>article{
+    margin: auto 0;
+    padding: 15px;
+    display: flex;
+    justify-content: left;
+}
+.section1>article>div:last-child{
+    width: 100%;
+    text-align: center;
+}
+.section1 img{
+    width: 120px;
+    height: 120px;
+}
+.section2{
+    background-color: #c6e7ca;
+    padding: 20px 20px 20px 20px;
+    margin: 15px 0 0 0;
+}
+.section2 article:nth-child(2n){
+    background-color: #f4cbd0;
+    padding: 2px 10px 2px 10px;
+}
+.section2 article:last-child{
+    background: url("../img/water.png");
+    color: #fff9b6;
+    padding: 2px 10px 2px 10px;
+    margin: 15px 0 0 0;
+}
