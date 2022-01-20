@@ -1,7 +1,9 @@
 $(document).ready(function(){
 
+    //console.log(document.location.href);
+    
     //variable home para location
-    var home = "/";
+    var home = "https://davegalisot.com/trntaryet/public/";
 
     function setTheme(themeName) {
         localStorage.setItem('theme', themeName);
@@ -122,7 +124,7 @@ $(document).ready(function(){
     /****************************************************************************************************/
     /**************************** Subraya el menu en la pagina que estemos ******************************/
     /****************************************************************************************************/
-    if (document.location.pathname == home){
+    if (document.location.href == home){
         $("#navbar a:first-child p").addClass("border-bottom-white");
     }else if(document.location.pathname.includes("quienes_somos")){
         $("#navbar a:nth-child(2) p").addClass("border-bottom-white");
@@ -153,7 +155,7 @@ $(document).ready(function(){
     /*****************************************************************************/
     /**************************** ODOMETER EN INDEX ******************************/
     /*****************************************************************************/
-    if (document.location.pathname == home){
+    if (document.location.href == home){
         $(window).scroll(function() {
             //check if your div is visible to user
             // CODE ONLY CHECKS VISIBILITY FROM TOP OF THE PAGE
@@ -269,7 +271,7 @@ $(document).ready(function(){
     }
 
     /* HOME */
-    if (document.location.pathname == home){
+    if (document.location.href == home){
         /* SLICK SLIDER */
         $('.customer-logos').slick({
             slidesToShow: 6,

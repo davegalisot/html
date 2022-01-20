@@ -109,7 +109,7 @@
                             </figcaption>
                         </figure>
                         <figure class="actividad a-logistica">
-                            <img src="<?php echo $_SESSION["public"]."img/fotos/logistica-y-mercancías.jpg" ?>">
+                            <img src="<?php echo $_SESSION["public"]."img/fotos/logistica-y-mercancias.jpg" ?>">
                             <figcaption>
                                 <h2>logística</h2>
                                 <h2>y</h2>
@@ -135,7 +135,7 @@
                             </figcaption>
                         </figure>
                         <figure class="actividad a-consultoria">
-                            <img src="<?php echo $_SESSION["public"]."img/fotos/consultoría.jpg" ?>">
+                            <img src="<?php echo $_SESSION["public"]."img/fotos/consultoria.jpg" ?>">
                             <figcaption>
                                 <h2>consultoría</h2>
                                 <h2>de</h2>
