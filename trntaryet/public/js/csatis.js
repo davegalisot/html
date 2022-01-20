@@ -15,9 +15,9 @@ $(document).ready(function(){
             'slow');
     });
 
-    function cambio_cara(id_div_radio,input_name,carita_class){
+    function cambio_cara(id_div_radio, input_name, carita_class){
         $(id_div_radio).click(function (){
-            seleccionado = $("input[name="+input_name+"]").filter(":checked").val();
+            seleccionado = $("input[name=" + input_name + "]").filter(":checked").val();
 
             switch (seleccionado){
                 case "1":
@@ -37,7 +37,7 @@ $(document).ready(function(){
     }
 
     //ATENCIÓN AL CLIENTE
-    cambio_cara("#at_cli_rb","at_cli", ".at_cli_carita");
+    cambio_cara("#at_cli_rb", "at_cli", ".at_cli_carita");
 
     //PLAZO DE ENTREGA
     cambio_cara("#pla_en_rb", "pla_en", ".pla_en_carita");
