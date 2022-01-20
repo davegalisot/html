@@ -1,5 +1,8 @@
         <footer id="footer" class="animated fadeIn">
             <div class="footer-flex width1500px mx-auto">
+            <a class="mx-auto" href="<?php echo $_SESSION["home"] ?>trabaja_con_nosotros">trabaja con nosotros</a>
+            </div>
+            <div class="footer-flex width1500px mx-auto">
                 <div class="footer-isos">
                     <img class="isos" src="<?php echo $_SESSION["public"]."img/logos/logo-bureau-iso-transparente.png" ?>" alt="">
                     <a href="<?php echo $_SESSION["public"]."img/pdf/POLITICA-CALIDAD-TRNTARYET.pdf" ?>" target="_blank">Política de calidad</a>
