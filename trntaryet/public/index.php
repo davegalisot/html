@@ -63,6 +63,9 @@ switch($numero){
         break;
     case 1:
         switch($array_ruta[0]){
+            case "trabaja_con_nosotros":
+                controlador()->trabaja_con_nosotros();
+                break;
             case "quienes_somos":
                 controlador()->quienes_somos();
                 break;
