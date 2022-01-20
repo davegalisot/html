@@ -24,17 +24,6 @@ class AppController{
         $this->view->vistas("app", "quienes_somos");
     }
 
-    public function contacto(){
-
-        if (isset($_POST))
-        $this->view->vistas("app", "contacto");
-    }
-
-    public function portfolio(){
-
-        $this->view->vistas("app", "portfolio");
-    }
-
     public function movilidad(){
 
         $this->view->vistas("app", "movilidad");
@@ -58,6 +47,22 @@ class AppController{
     public function consultoria(){
 
         $this->view->vistas("app", "consultoria");
+    }
+
+    public function contacto(){
+
+        if (isset($_POST))
+        $this->view->vistas("app", "contacto");
+    }
+
+    public function portfolio(){
+
+        $this->view->vistas("app", "portfolio");
+    }
+
+    public function trabaja_con_nosotros(){
+
+        $this->view->vistas("app", "trabaja_con_nosotros");
     }
 
     public function cookies(){
