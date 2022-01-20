@@ -26,6 +26,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo $_SESSION["public"] ?>css/common.css">
         <link rel="stylesheet" type="text/css" href="<?php echo $_SESSION["public"] ?>css/index.css">
         <link rel="stylesheet" type="text/css" href="<?php echo $_SESSION["public"] ?>css/quienes-somos.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo $_SESSION["public"] ?>css/trabaja-con-nosotros.css">
         <link rel="stylesheet" type="text/css" href="<?php echo $_SESSION["public"] ?>css/que-hacemos.css">
         <link rel="stylesheet" type="text/css" href="<?php echo $_SESSION["public"] ?>css/contacto.css">
         <link rel="stylesheet" type="text/css" href="<?php echo $_SESSION["public"] ?>css/mediaQueryMaxWidth1200.css">
