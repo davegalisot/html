@@ -242,7 +242,7 @@ $(document).ready(function(){
         $("<div>", {"id": "s_madrid", "class": "sede disabled"}).appendTo($("#h_madrid"));
         $("<img>").attr("src","../img/sedes/trntaryet_madrid.png").appendTo($("#s_madrid"));
         $("<div>", {"id": "d_madrid", "class": "detalle disabled"}).appendTo($("#h_madrid"));
-        $("<p>").text("C/ Vizconde de Matamala, nº1, 2ªPl").appendTo($("#d_madrid"));
+        $("<p>").text("C/ Francisco Ramiro 2, Bloque A, Piso 1").appendTo($("#d_madrid"));
         $("<p>").text("28028 Madrid (España)").appendTo($("#d_madrid"));
         $("<p>").text("Tel. +34 91 409 60 75").appendTo($("#d_madrid"));
         $("<p>").text("Fax. +34 91 557 04 11").appendTo($("#d_madrid"));
@@ -1227,4 +1227,88 @@ $(document).ready(function(){
         $(".pop-up").css({"visibility": "hidden", "opacity": 0});
         $(".box").css("pointer-events", "auto");
     });
+
+    /***************************************** TRABAJA CON NOSOTROS FORM **************************************************/
+    
+    $("#enviar-form").click(function(e){
+
+        var nombre = $("#nombre-form").val();
+        var email = $("#email-form").val();
+        var telf = $("#telf-form").val();
+        var check_input = $("#check-form").prop("checked");
+        var mensaje = $("#mensaje-form").val();
+
+        if (nombre == "") {
+            $(".error-nombre").css("display", "block");
+            e.preventDefault();
+        }else{
+            $(".error-nombre").css("display", "none");
+        }
+
+        if (email == "") {
+            $(".error-email").css("display", "block");
+            e.preventDefault();
+        }else{
+            $(".error-email").css("display", "none");
+        }
+
+        if (telf == "") {
+            $(".error-telf").css("display", "block");
+            e.preventDefault();
+        }else{
+            $(".error-telf").css("display", "none");
+        }
+
+        if (check_input == false) {
+            $(".error-check").css("display", "block");
+            e.preventDefault();
+        }else{
+            $(".error-check").css("display", "none");
+        }
+
+        if ($("#micv-form").get(0).files.length === 0) {
+            $(".error-attachment").css("display", "block");
+            e.preventDefault();
+        }else{
+            $(".error-attachment").css("display", "none");
+        }
+
+        if (mensaje.length < 5) {
+            $(".error-mensaje").css("display", "block");
+            e.preventDefault();
+        }else{
+            $(".error-mensaje").css("display", "none");
+        }
+
+    });
+
+    $("#mensaje-form").on("focus", function(){
+
+        $(this).keyup(function(){
+            var mensaje = $("#mensaje-form").val().length
+            console.log(mensaje);
+
+            if (mensaje <= 5){
+                $(".error-mensaje").html("El mensaje debe ser mayor de " + mensaje + " caracteres");
+            }          
+
+            if (mensaje > 5){
+                $(".error-mensaje").css("display", "none");
+            }else{
+                $(".error-mensaje").css("display", "block");
+            }           
+        });
+
+    });
+
+    document.body.onfocus = function(){
+        setTimeout(() => {
+            if ($("#micv-form").get(0).files.length === 0) {
+                $(".error-attachment").css("display", "block");
+            }else{
+                $(".error-attachment").css("display", "none");
+            } 
+        }, 1000);        
+    }
+
 });
