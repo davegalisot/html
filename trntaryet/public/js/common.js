@@ -1306,9 +1306,28 @@ $(document).ready(function(){
             if ($("#micv-form").get(0).files.length === 0) {
                 $(".error-attachment").css("display", "block");
             }else{
-                $(".error-attachment").css("display", "none");
+                var ext = $("#micv-form").get(0).files[0].type;
+                var arrayExtensions = ["image/jpg" , "image/jpeg", "image/png", "image/bmp", "application/pdf"];
+                console.log(ext);
+                if (arrayExtensions.includes(ext)) {
+                    $(".error-attachment").css("display", "none");
+                }else{
+                    $(".error-attachment").css("display", "block");
+                    $(".error-attachment").html("Extensión no válida, suba otro archivo");
+                    $("#micv-form").val("");
+                }                  
+                
             } 
         }, 1000);        
-    }
+    };
+
+    /*$("#micv-form").change(function(){
+            var files = this.files;
+          
+            for (var i = 0; i < files.length; i++) {
+              var type = files[i].type;
+              console.log("File type: " + type);
+            }
+    });*/  
 
 });

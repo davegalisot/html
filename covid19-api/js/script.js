@@ -197,7 +197,7 @@ $(document).ready(function () {
 
                         if (contador == 1){
                             $("<div>", {"id": "clearDataButtonDiv", "class": "input-group-append"}).appendTo("#clearButton");
-                                $("<button>", {"id": "clearDataButton", "class": "btn btn-outline-secondary", "type": "button"}).text("Clear").click(function () {
+                                $("<button>", {"id": "clearDataButton", "class": "btn btn-outline-secondary", "type": "button"}).text("Clear All").click(function () {
                                     //elimina la section actual
                                     $("#byCountryDiv *").remove();
                                     $("#clearDataButtonDiv *").remove();

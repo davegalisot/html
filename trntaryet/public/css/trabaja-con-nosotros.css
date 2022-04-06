@@ -100,3 +100,12 @@ label{
 .section-trabaja-con-nosotros p.error-check, .section-trabaja-con-nosotros p.error-attachment{
     margin: 0;
 }
+
+.section-trabaja-con-nosotros p.error-email{
+    display: block;
+    color: red;
+}
+
+.no-error{
+    display: none
+}
