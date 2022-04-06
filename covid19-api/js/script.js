@@ -145,8 +145,6 @@ $(document).ready(function () {
 
                 var country = inputGroupSelect01.value;
 
-                contador++;
-
                 /* DATA BY COUNTRY */
                 var dataByCountry = null;
 
@@ -172,39 +170,46 @@ $(document).ready(function () {
                         //obtiene el contenedor principal
                         var mainContainer = $("#byCountryDiv");
 
-                        var mainDataContainer = "#byCountryTotal" + contador;
+                        var mainDataContainer = "#byCountryTotal" + addedCountries.length;
 
                         if (!addedCountries.includes(receivedData.country)){
-                            $("<div>", {"id": ("byCountryTotal" + contador), "class":"rect"}).appendTo(mainContainer);
+                            $("<div>", {"id": ("byCountryTotal" + addedCountries.length), "class":"rect"}).appendTo(mainContainer);
 
-                            $("<div>", {"id": ("byCountryData1" + contador), "class": "div1"}).appendTo(mainDataContainer);
-                            $("<h3>", {"class": "Title"}).text(receivedData.country).appendTo("#byCountryData1" + contador);
+                            $("<div>", {"id": ("byCountryData1" + addedCountries.length), "class": "div1"}).appendTo(mainDataContainer);
+                            $("<h3>", {"class": "Title"}).text(receivedData.country).appendTo("#byCountryData1" + addedCountries.length);
 
-                            $("<div>", {"id": ("byCountryData2" + contador), "class": "div2"}).appendTo(mainDataContainer);
-                            $("<p>", {"class": "mainP"}).text("cases").appendTo("#byCountryData2" + contador);
-                            $("<p>", {"class":"dataP"}).text(country.total_cases ? country.total_cases : "N/A").appendTo("#byCountryData2" + contador);
+                            $("<div>", {"id": ("byCountryData2" + addedCountries.length), "class": "div2"}).appendTo(mainDataContainer);
+                            $("<p>", {"class": "mainP"}).text("cases").appendTo("#byCountryData2" + addedCountries.length);
+                            $("<p>", {"class":"dataP"}).text(country.total_cases ? country.total_cases : "N/A").appendTo("#byCountryData2" + addedCountries.length);
 
-                            $("<div>", {"id": ("byCountryData3" + contador), "class": "div3"}).appendTo(mainDataContainer);
-                            $("<p>", {"class": "mainP"}).text("recovered").appendTo("#byCountryData3" + contador);
-                            $("<p>", {"class":"dataP"}).text(country.total_recovered ? country.total_recovered : "N/A").appendTo("#byCountryData3" + contador);
+                            $("<div>", {"id": ("byCountryData3" + addedCountries.length), "class": "div3"}).appendTo(mainDataContainer);
+                            $("<p>", {"class": "mainP"}).text("recovered").appendTo("#byCountryData3" + addedCountries.length);
+                            $("<p>", {"class":"dataP"}).text(country.total_recovered ? country.total_recovered : "N/A").appendTo("#byCountryData3" + addedCountries.length);
 
-                            $("<div>", {"id": ("byCountryData4" + contador), "class": "div4"}).appendTo(mainDataContainer);
-                            $("<p>", {"class": "mainP"}).text("deaths").appendTo("#byCountryData4" + contador);
-                            $("<p>", {"class":"dataP"}).text(country.total_deaths ? country.total_deaths : "N/A").appendTo("#byCountryData4" + contador);
+                            $("<div>", {"id": ("byCountryData4" + addedCountries.length), "class": "div4"}).appendTo(mainDataContainer);
+                            $("<p>", {"class": "mainP"}).text("deaths").appendTo("#byCountryData4" + addedCountries.length);
+                            $("<p>", {"class":"dataP"}).text(country.total_deaths ? country.total_deaths : "N/A").appendTo("#byCountryData4" + addedCountries.length);
+
+                            $("<div>", {"id": ("byCountryData5" + addedCountries.length), "class": "div5"}).appendTo(mainDataContainer);
+                            $("<button>", {"id": "clearThisDataButton", "class": "btn btn-outline-secondary", "type": "button"}).text("Remove").click(function () {
+                                //elimina la section actual
+                                $("#byCountryTotal" + addedCountries.length + " *").remove();
+                            }).appendTo("#byCountryData5" + contador);
 
                             addedCountries.push(receivedData.country);
                         }
 
-                        if (contador == 1){
-                            $("<div>", {"id": "clearDataButtonDiv", "class": "input-group-append"}).appendTo("#clearButton");
-                                $("<button>", {"id": "clearDataButton", "class": "btn btn-outline-secondary", "type": "button"}).text("Clear All").click(function () {
-                                    //elimina la section actual
-                                    $("#byCountryDiv *").remove();
-                                    $("#clearDataButtonDiv *").remove();
-                                    contador = 0;
-                                    addedCountries = [];
-                                }).appendTo("#clearDataButtonDiv");
+                        if (addedCountries.length == 0) {
+                            $("#clearDataButtonDiv *").remove();
                         }
+
+                        $("<div>", {"id": "clearDataButtonDiv", "class": "input-group-append"}).appendTo("#clearButton");
+                        $("<button>", {"id": "clearDataButton", "class": "btn btn-outline-secondary", "type": "button"}).text("Remove All").click(function () {
+                            //elimina la section actual
+                            $("#byCountryDiv *").remove();
+                            $("#clearDataButtonDiv *").remove();
+                            addedCountries = [];
+                        }).appendTo("#clearDataButtonDiv");
                     }
                 });
 
