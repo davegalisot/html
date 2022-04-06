@@ -93,7 +93,7 @@ div.covid-data{
 }
 .rect h3 {
     font-size: 25px;
-    margin: 0;
+    margin: 0 0 10px 0;
     border-bottom: 1px solid black;
 }
 .rect p{
